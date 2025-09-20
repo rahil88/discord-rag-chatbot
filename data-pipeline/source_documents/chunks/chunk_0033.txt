@@ -1,0 +1,30 @@
+Source: Intern_FAQ_AI_Bootcamp
+Chunk 19 of 20
+Size: 1309 characters
+Hash: 3360baeb0d89429c8c4d90928b59d8baaa5403e6294162faa920e3791a3783fd
+--------------------------------------------------
+Please make sure to send/share your full legal name in your offer letter. 
+- If you have any questions, don't hesitate to ask in #visa-sponsorship channel or reach out directly to our support team : Marla.
+
+
+
+
+5. Do Interns have AI PM Bootcamp Kajabi access? 
+- No. Only PMs enrolled in the program have access to our course modules (Kajabi). Interns will have access to their own recorded training/session/files with the link/s that the PMA team will share.
+
+
+Example: 
+- Recent AI Intern recorded training/ onboarding with Mentors Aishwarya Saad Shariff & Anil Thomas: https://youtu.be/O0WJ1LTqhAY 
+
+
+- Intern Onboarding, training, AI course and guide document: https://docs.google.com/document/d/18O8Xpbognhi3GYJeHDYbBRHGAl5-a4DL/edit?usp=sharing&ouid=100574353221996474859&rtpof=true&sd=true 
+
+
+
+
+6. How many interns (engineers & designers) should be included in a team? 
+* Usually we have 1 designer, 2 back-end, 1 front-end, 1 data scientist per team. Once each team meet the basic number of interns, all the un matched interns can reach out to each team lead to the team they are interested in.
+
+
+7. Considering the CPT/OPT requirement, can my end date for the internship be past the cohort end date? 
+* By default, the team can extend the end date past the cohort time/schedule

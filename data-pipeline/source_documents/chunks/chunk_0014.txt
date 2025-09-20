@@ -1,0 +1,29 @@
+Source: Intern_FAQ_AI_Bootcamp
+Chunk 0 of 20
+Size: 1385 characters
+Hash: b7dfb124d8f7cc4c58c8458e32b75c1be56646c7fafddb530ca0484973819894
+--------------------------------------------------
+﻿Intern FAQ - AI Bootcamp 
+
+
+Here are the next steps (Intern Onboarding). 
+
+
+1. IF YOU DIDN’T watch the welcome and onboarding video by Dr. Nancy Li, make sure to watch it now. This is mandatory to know how to be successful during the internship. 
+
+
+2. Join our Developer Discord server and complete your server onboarding process. Once you join the server will have pop-ups to guide you through the process. 
+* The first thing you should do after joining discord is to update your profile with your full name and linkedin url.  This is the main way everyone will communicate with you. 
+* Please introduce yourself in the #networking channel and post your techstack in the #techstack channel
+
+
+3. Watch past cohort demos [MANDATORY]
+* Summary of Cohort 1 and 2 Demo
+https://youtu.be/S69147JbQpU?si=p0fHjqO7tTlyUHTB
+* Example of Cohort 3 Demo (highly recommended)
+https://youtu.be/5OZjUtUdbbI?si=iW_JL81H3fjLl0yn
+
+
+4. Join our first tech mentor session. Dates will be announced in the Discord channel. Our mentor will give you an overview of how to collaborate in a cross-functional team during the AI project and how to find tech resources. Here is the link to the onboarding and training guide for all interns. Here are the Youtube playlists training referenced in the training guide above. 
+   1. Engineers’ Training Playlist
+   2. Designers’ Training Playlist

@@ -1,0 +1,24 @@
+Source: Intern_FAQ_AI_Bootcamp
+Chunk 6 of 20
+Size: 1465 characters
+Hash: 7d4c237f1b86232d5b3549d035e450c596d8dfcf893630e8758d4b0ce2f0e14e
+--------------------------------------------------
+* All Engineers: Wed 9/17 9 PM—10 PM (EST)  Tech Ownership - [Mentor: Adam Zhu]
+* All - Sun 9/21 10 AM—11 AM (EST)    Office hours/Q&A sessions to clarify doubts
+Week 2: End-to-End Al Product Management Lifecycle
+* PM Only: Mon 9/22 8 PM—10 PM (EST)    AI PM Life Cycle Session
+* PM & Designers : Tue 9/23 10 —12 PM (EST)  Group Project Kickoff: Pitch ideas, & assemble team 
+* All - Sun 9/28 10:00 AM—11:00 AM (EST)    Office hours/Q&A sessions to clarify doubts
+Week 3: Existing LLM and Al Models, Trade-offs, and Pricing
+* PM Only:Mon 9/29 9- 10:30 PM (EST) Structuring Your Product Team for Success [Linda Wang]
+* PM Only: Tues 9/30 8:00 PM - 10 PM (EST)  AI Models and LLM Session [Mentor: Adam Zhu]
+* All - Sun 10/5 10:00 AM - 11 AM (EST)    Office hours/Q&A sessions to clarify doubts
+Week 4: Advanced AI
+* PM Only: Tues 10/7  8:00 PM—10:00 PM (EST)    Advanced AI Session [Mentor: Adam Zhu]
+* All - Tue 10/7 10:00 AM—12:00 PM (EST)  AI Developer Team Match: Pitch ideas and team match with developers and a demo
+* All - Sun 10/12 10:00 AM—11:00 AM (EST)    Office hours/Q&A sessions to clarify doubts
+Week 5: AI UI/UX Design and AI Architecture
+* PM Only: Mon 10/13 8:00 PM—9:00 PM (EST)    AI UI/UX Design
+* PM Only: Tues 10/14 9:00 PM—10:00 PM (EST)    AI Architecture [Mentor: Adam Zhu]
+*  All - Sun 10/19 10:00 AM—11:00 AM (EST)    Office hours/Q&A sessions to clarify doubts
+Week 6: GTM - Drive users and engagement of your Al Project

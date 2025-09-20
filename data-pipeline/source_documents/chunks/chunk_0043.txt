@@ -1,0 +1,13 @@
+Source: Intern_FAQ_AI_Bootcamp
+Chunk 23 of 30
+Size: 704 characters
+Hash: ea41bd7e20956bc8c5d5041ac4e4d90336d96f9a2008145eca3badf6c5b27c77
+--------------------------------------------------
+* A: Yes. Make sure to communicate with our team. We will see if you can fit into the next cohort.
+13. Q: What happens if I don’t meet the coding skill requirements?
+   * A: You will not be selected for the internship if your coding skills do not meet the required standards.
+14. Q: How will the internship experience be recognized on LinkedIn?
+   * A: You can list the internship experience on LinkedIn after successfully completing the project.
+15. Q: What is the team size for the projects?
+   * A: Teams typically consist of 8 to 10 people, including product managers and engineers, depending on the scope of the project.
+16. Q: What happens after the internship in terms of job opportunities?

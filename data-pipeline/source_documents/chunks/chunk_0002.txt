@@ -1,0 +1,35 @@
+Source: AI_Bootcamp_Journey_Learning_Path
+Chunk 2 of 8
+Size: 1447 characters
+Hash: 45d4f3d23ab6fb53544a4b70e3ba793c02b459c5a37ac1dafd0ea3282fa7f11c
+--------------------------------------------------
+* Designers & PM present to Engineers
+         * Engineers join Zoom Pitch Day and fill out Google Ranking form. (Lead Engineers get Ranking choice priority)  
+         * Lead Engineer Responsibilities = 
+         * Lead System Architecture Design (Bring thoughts to Office Hours)
+         * Determine version control process in shared repository (Github) [And Git locally]
+         * Assist other Engineers (not code for them but help with issues/hurdles)
+         * Help PM’s with technical hurdles
+
+
+         * Week 5: Cross-functional team collaboration. Agile feature development
+         * Week 6: Cross-functional team collaboration. Agile feature development
+         * Week 7 Cross-functional team collaboration. Agile feature development 
+         * Week 8: Cross-functional team collaboration. Agile feature development 
+         * Week 9: Cross-functional team collaboration. Agile feature development
+         * Week 10: Testing and Demo ready
+         * Week 11: Demo!
+
+
+Training Documents: 
+         * Training for Engineers (Click link)  
+         * Training for Designers (Click link)  
+         * Transformers Illustrated
+         * The Illustrated Transformer – Jay Alammar
+         * Andrej Karpathy's Neural Networks Zero to Hero
+         * Neural Networks: Zero to Hero - YouTube
+         * HuggingFace Course
+         * Introduction - Hugging Face NLP Course
+
+
+Gen AI & Data Engineering (4 Days)

@@ -1,0 +1,48 @@
+Source: AI_Bootcamp_Journey_Learning_Path
+Chunk 3 of 8
+Size: 1489 characters
+Hash: 7db2bccc9c6737e8160220daa041b8f8fb3aad615d5b6ba1e095300f75690b53
+--------------------------------------------------
+* The Illustrated Transformer – Jay Alammar
+         * Andrej Karpathy's Neural Networks Zero to Hero
+         * Neural Networks: Zero to Hero - YouTube
+         * HuggingFace Course
+         * Introduction - Hugging Face NLP Course
+
+
+Gen AI & Data Engineering (4 Days)
+Generative AI for Beginners | Microsoft Learn
+         * Day 1-2: LLM Fundamentals
+         * LLM architectures
+         * Prompt engineering
+         * Context length and limitations
+         * RAG (Retrieval Augmented Generation)
+         * Vector databases
+         * Day 3: Data Engineering
+         * Data preprocessing
+         * Text chunking strategies
+         * Embedding models
+         * Vector similarity search
+         * Data quality and validation
+         * Day 4: Integration
+         * API integration (OpenAI, Anthropic)
+         * Streaming responses
+         * Error handling
+         * Cost optimization
+         * Practical Exercises:
+         * Build a simple chatbot
+         * Implement RAG system
+         * Create custom training dataset
+         * Resources:
+         * LangChain Documentation
+         * Tutorials | 🦜️🔗 LangChain
+         * OpenAI Cookbook
+         * GitHub - openai/openai-cookbook: Examples and guides for using the OpenAI API
+         * Vector Database Fundamentals
+         * What is a Vector Database & How Does it Work? Use Cases + Examples | Pinecone
+
+
+
+
+MLOps & Deployment (3 Days)
+         * Day 1: Development Practices

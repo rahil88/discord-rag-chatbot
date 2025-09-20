@@ -1,0 +1,53 @@
+Source: AI_Bootcamp_Journey_Learning_Path
+Chunk 6 of 8
+Size: 1480 characters
+Hash: 8639372119b30d664ceadd3859713c4740981aa7d9b8dafc0e246d9707e1c32b
+--------------------------------------------------
+*   Full Stack Engineer
+         * Front end Engineer
+         * Back end Engineer
+         * Fullstack Engineer
+         *   Data Scientist
+         *   Data Engineer
+         *   UX Designer
+         *   Product Manager
+         * Weekly Schedule: (team consensus)
+         * Monday: Sprint planning/review
+         * Daily: Standups
+         * Wednesday: Technical discussion
+         * Friday: Demo/documentation
+         * Real-world Applications (Ongoing)
+         * Project Requirements:
+         * Business value proposition
+         * Scalability considerations
+         * Cost optimization
+         * Security compliance
+         * User experience
+         * Deliverables: (team consensus)
+         * Working prototype
+         * Technical documentation
+         * API documentation
+         * Deployment pipeline
+         * Monitoring dashboard
+         * Final presentation
+
+
+Onboarding Video Link By Anil Thomas: https://youtu.be/ZBEoZYmMCMc [Cohort 5]
+
+
+Success Metrics:
+         1. Functional prototype
+         2. Clean, documented code
+         3. Comprehensive testing
+         4. Clear documentation
+         5. Effective presentation
+         6. Team collaboration
+
+
+Tools & Technologies
+[05. Tools & Technologies.docx]
+Mentor Kat Sao’s Schedule & Recordings (Cohort 3) 
+
+
+Week 1: Friday, January 31 @11am - Duration: 1hr
+   Session Theme: Introduction, What to expect, Timelines, Q&A https://youtu.be/_v6hyhS_U0U

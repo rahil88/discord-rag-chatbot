@@ -1,0 +1,25 @@
+Source: Intern_FAQ_AI_Bootcamp
+Chunk 26 of 30
+Size: 994 characters
+Hash: 5915b15f1d5339a903b1432937f6ee3ae7314dbb5d11a720449ad1f72a51b361
+--------------------------------------------------
+2. Who will pay for services that require pay during the internship? 
+   1. Example - API services or Cloud services for the AI product? 
+   2. Example - Need compute for FineTuning a model? 
+
+
+Answer: Our company or the product managers in the same team will cover the cloud and API cost. But we will not cover the computer device cost. 
+
+
+3. I will be traveling to visit my family from the USA to India, China, etc…. Can I use this OPT/CPT work permit for reentry into the USA? 
+
+
+Answer: We don’t know, please contact your immigration lawyer. 
+
+
+
+
+4. Standard response for CPT/OPT process in the program: 
+For interns' CPT and OPT sponsorship concerns, please follow the steps below:     
+**1. Consult Your School First**
+Please speak with your school’s international student office to understand their specific requirements for CPT or OPT authorization. They will inform you what documentation or updates are needed from our side (e.g., offer letter, company info, etc.).

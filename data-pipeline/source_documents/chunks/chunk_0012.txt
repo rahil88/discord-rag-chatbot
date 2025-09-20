@@ -1,0 +1,71 @@
+Source: Training_For_AI_Engineer_Interns
+Chunk 4 of 6
+Size: 1461 characters
+Hash: 101c31ea79c1dc1f9a80974e85fd559a53779c45116b4eddc83f1e8941a38185
+--------------------------------------------------
+* LangChain - Reflection Agents example
+      * Tool Use
+         * LangChain - Tool Calling        
+      * Planning
+         * LangGraph - Planning Agents
+      * Multi-agent Collaboration
+         * LangGraph: Multi-Agent Workflows
+
+
+      * Agent Evaluations
+         * LangGraph: Agent Evaluations
+         * LangSmith Without LangChain/Graph (Observability, Evals)
+
+
+      * Designing with Agents in Mind (Important for Frontend developers)
+         * The Agentic Era of UX
+         * LangChain: Breakout Agentic Apps
+         * LangChain: UX for Agents, Part 1: Chat
+         * LangChain: UX for Agents, Part 2: Ambient
+         * LangChain: UX for Agents, Part 3: Spreadsheets, Generative, and Collaborative UI/UX
+
+
+
+
+
+
+Examples of Developing AI Products
+
+
+
+
+Create ChatGPT Application with Chat GPT API from OpenAI in Python Flask
+
+
+Build AI Apps with ChatGPT and DALL-E
+
+
+Developer channel
+
+
+Introduction to Databases
+
+
+Database Basic: 
+Microsoft database foundations. 
+
+
+SQL Basics and Advanced Queries
+* (58mins) Learn SQL in 1 hour 
+* (docs) SQL reference 
+
+
+Database Design and Normalization
+Basic lesson: 
+* (17mins) Database design tutorial. 
+* (6mins) Database schema
+* (32mins) Logical Database Design and E-R Diagrams
+* (docs) The design process
+* (docs) Applying the normalization rules
+
+
+Advanced lesson: (optional)
+* (27 hours) Meta Intro to database. 
+
+
+Python Fundamentals

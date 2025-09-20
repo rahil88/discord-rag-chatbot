@@ -1,0 +1,18 @@
+Source: Intern_FAQ_AI_Bootcamp
+Chunk 19 of 30
+Size: 979 characters
+Hash: df50a02eeb55184ea2e22de5fd9760b000de840e4348cad3effb9fb73b9d78a1
+--------------------------------------------------
+6. Evaluation and Outcome:
+   * The technical assessment will determine who gets selected. The evaluation includes both the coding quality and the candidate’s ability to collaborate effectively within the team.
+   * Participants who excel may receive an AI engineering certification and opportunities to list the internship on LinkedIn. The internship also provides exposure to job opportunities through the network and social media channels of Dr. Nancy Li.
+
+
+
+
+Q&A Session:
+1. Q: What is the start date of the internship?
+   * A: The earliest start date is next week, depending on the completion of the assessment. The internship runs for 3 months per year. The current cohort is from Sept 15 to November 28th. Please refer to your offer letter for the exact date.
+2. Q: Is the internship paid or unpaid?
+   * A: The internship is unpaid, but it offers valuable experience and the opportunity to work on real AI projects.
+3. Q: What is the expected time commitment?

@@ -1,0 +1,259 @@
+2025-09-19 21:40:01,554 - __main__ - INFO - Running integration tests...
+2025-09-19 21:40:01,554 - __main__ - WARNING - Google credentials file 'credentials.json' not found. Falling back to web scraping method.
+2025-09-19 21:40:01,554 - __main__ - INFO - All integration tests passed!
+2025-09-19 21:40:05,908 - __main__ - INFO - Validating environment...
+2025-09-19 21:40:05,908 - __main__ - INFO - Environment validation successful
+2025-09-19 21:40:05,908 - __main__ - INFO - Running integration tests...
+2025-09-19 21:40:05,909 - __main__ - WARNING - Google credentials file 'credentials.json' not found. Falling back to web scraping method.
+2025-09-19 21:40:05,909 - __main__ - INFO - All integration tests passed!
+2025-09-19 21:40:05,909 - __main__ - WARNING - Google credentials file 'credentials.json' not found. Falling back to web scraping method.
+2025-09-19 21:40:05,909 - __main__ - INFO - Starting enterprise document ingestion pipeline...
+2025-09-19 21:40:05,909 - __main__ - INFO - Processing document 1/3: AI_Bootcamp_Journey_Learning_Path
+2025-09-19 21:40:05,909 - __main__ - DEBUG - Extracted document ID: 18O8Xpbognhi3GYJeHDYbBRHGAl5-a4DL
+2025-09-19 21:40:05,913 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): docs.google.com:443
+2025-09-19 21:40:06,254 - urllib3.connectionpool - DEBUG - https://docs.google.com:443 "GET /document/d/18O8Xpbognhi3GYJeHDYbBRHGAl5-a4DL/export?format=txt HTTP/1.1" 307 None
+2025-09-19 21:40:06,257 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): doc-0o-1g-docstext.googleusercontent.com:443
+2025-09-19 21:40:06,942 - urllib3.connectionpool - DEBUG - https://doc-0o-1g-docstext.googleusercontent.com:443 "GET /export/e6hpso97lrhpva19l3uocm525o/rd1qk6n56mfc1b73f041sj9eqs/1758343205000/100574353221996474859/*/18O8Xpbognhi3GYJeHDYbBRHGAl5-a4DL?format=txt HTTP/1.1" 200 None
+2025-09-19 21:40:06,951 - __main__ - INFO - Successfully downloaded document via web scraping: 9636 characters
+2025-09-19 21:40:06,952 - __main__ - INFO - Successfully chunked document into 12 chunks
+2025-09-19 21:40:06,955 - __main__ - ERROR - Failed to save document AI_Bootcamp_Journey_Learning_Path: Object of type ProcessingStatus is not JSON serializable
+2025-09-19 21:40:06,955 - __main__ - ERROR - Unexpected error processing AI_Bootcamp_Journey_Learning_Path: Object of type ProcessingStatus is not JSON serializable
+2025-09-19 21:40:06,955 - __main__ - INFO - Processing document 2/3: Training_For_AI_Engineer_Interns
+2025-09-19 21:40:06,955 - __main__ - DEBUG - Extracted document ID: 1NfmEDyxrJ7Tz7Wq4lAJHx1fQ4bPpM5v07dPTM4pjOsM
+2025-09-19 21:40:07,182 - urllib3.connectionpool - DEBUG - https://docs.google.com:443 "GET /document/d/1NfmEDyxrJ7Tz7Wq4lAJHx1fQ4bPpM5v07dPTM4pjOsM/export?format=txt HTTP/1.1" 307 0
+2025-09-19 21:40:07,184 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): doc-0g-c4-docstext.googleusercontent.com:443
+2025-09-19 21:40:07,748 - urllib3.connectionpool - DEBUG - https://doc-0g-c4-docstext.googleusercontent.com:443 "GET /export/e6hpso97lrhpva19l3uocm525o/2q5vikmobhveh0cj5u3g64a9bk/1758343205000/114588341874056644793/*/1NfmEDyxrJ7Tz7Wq4lAJHx1fQ4bPpM5v07dPTM4pjOsM?format=txt HTTP/1.1" 200 None
+2025-09-19 21:40:07,752 - __main__ - INFO - Successfully downloaded document via web scraping: 6572 characters
+2025-09-19 21:40:07,753 - __main__ - INFO - Successfully chunked document into 8 chunks
+2025-09-19 21:40:07,756 - __main__ - ERROR - Failed to save document Training_For_AI_Engineer_Interns: Object of type ProcessingStatus is not JSON serializable
+2025-09-19 21:40:07,756 - __main__ - ERROR - Unexpected error processing Training_For_AI_Engineer_Interns: Object of type ProcessingStatus is not JSON serializable
+2025-09-19 21:40:07,756 - __main__ - INFO - Processing document 3/3: Intern_FAQ_AI_Bootcamp
+2025-09-19 21:40:07,756 - __main__ - DEBUG - Extracted document ID: 1RDsjDgszRw5yvjca24aqhmQu2UCrdWdVB3Bb_jd6V6Q
+2025-09-19 21:40:07,957 - urllib3.connectionpool - DEBUG - https://docs.google.com:443 "GET /document/d/1RDsjDgszRw5yvjca24aqhmQu2UCrdWdVB3Bb_jd6V6Q/export?format=txt HTTP/1.1" 307 None
+2025-09-19 21:40:07,961 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): doc-0s-c4-docstext.googleusercontent.com:443
+2025-09-19 21:40:08,624 - urllib3.connectionpool - DEBUG - https://doc-0s-c4-docstext.googleusercontent.com:443 "GET /export/e6hpso97lrhpva19l3uocm525o/6rhpuaecp1oq6i8atomkmt8es8/1758343205000/114588341874056644793/*/1RDsjDgszRw5yvjca24aqhmQu2UCrdWdVB3Bb_jd6V6Q?format=txt HTTP/1.1" 200 None
+2025-09-19 21:40:08,642 - __main__ - INFO - Successfully downloaded document via web scraping: 23660 characters
+2025-09-19 21:40:08,644 - __main__ - INFO - Successfully chunked document into 30 chunks
+2025-09-19 21:40:08,646 - __main__ - ERROR - Failed to save document Intern_FAQ_AI_Bootcamp: Object of type ProcessingStatus is not JSON serializable
+2025-09-19 21:40:08,646 - __main__ - ERROR - Unexpected error processing Intern_FAQ_AI_Bootcamp: Object of type ProcessingStatus is not JSON serializable
+2025-09-19 21:40:08,647 - __main__ - INFO - Saved 0 chunks to source_documents/all_chunks.json
+2025-09-19 21:40:08,647 - __main__ - ERROR - Unexpected error: Object of type ProcessingStatus is not JSON serializable
+2025-09-19 21:40:29,955 - __main__ - INFO - Validating environment...
+2025-09-19 21:40:29,955 - __main__ - INFO - Environment validation successful
+2025-09-19 21:40:29,955 - __main__ - INFO - Running integration tests...
+2025-09-19 21:40:29,955 - __main__ - WARNING - Google credentials file 'credentials.json' not found. Falling back to web scraping method.
+2025-09-19 21:40:29,955 - __main__ - INFO - All integration tests passed!
+2025-09-19 21:40:29,955 - __main__ - WARNING - Google credentials file 'credentials.json' not found. Falling back to web scraping method.
+2025-09-19 21:40:29,955 - __main__ - INFO - Starting enterprise document ingestion pipeline...
+2025-09-19 21:40:29,955 - __main__ - INFO - Processing document 1/3: AI_Bootcamp_Journey_Learning_Path
+2025-09-19 21:40:30,822 - __main__ - INFO - Successfully downloaded document via web scraping: 9636 characters
+2025-09-19 21:40:30,825 - __main__ - INFO - Successfully chunked document into 12 chunks
+2025-09-19 21:40:30,827 - __main__ - INFO - Processing document 2/3: Training_For_AI_Engineer_Interns
+2025-09-19 21:40:31,364 - __main__ - INFO - Successfully downloaded document via web scraping: 6572 characters
+2025-09-19 21:40:31,365 - __main__ - INFO - Successfully chunked document into 8 chunks
+2025-09-19 21:40:31,366 - __main__ - INFO - Processing document 3/3: Intern_FAQ_AI_Bootcamp
+2025-09-19 21:40:31,981 - __main__ - INFO - Successfully downloaded document via web scraping: 23660 characters
+2025-09-19 21:40:31,982 - __main__ - INFO - Successfully chunked document into 30 chunks
+2025-09-19 21:40:31,993 - __main__ - INFO - Saved 50 chunks to source_documents/all_chunks.json
+2025-09-19 21:40:31,994 - __main__ - ERROR - Unexpected error: Object of type Document is not JSON serializable
+2025-09-19 21:40:42,554 - __main__ - INFO - Validating environment...
+2025-09-19 21:40:42,554 - __main__ - INFO - Environment validation successful
+2025-09-19 21:40:42,554 - __main__ - INFO - Running integration tests...
+2025-09-19 21:40:42,554 - __main__ - WARNING - Google credentials file 'credentials.json' not found. Falling back to web scraping method.
+2025-09-19 21:40:42,555 - __main__ - INFO - All integration tests passed!
+2025-09-19 21:40:42,555 - __main__ - WARNING - Google credentials file 'credentials.json' not found. Falling back to web scraping method.
+2025-09-19 21:40:42,555 - __main__ - INFO - Starting enterprise document ingestion pipeline...
+2025-09-19 21:40:42,555 - __main__ - INFO - Processing document 1/3: AI_Bootcamp_Journey_Learning_Path
+2025-09-19 21:40:43,386 - __main__ - INFO - Successfully downloaded document via web scraping: 9636 characters
+2025-09-19 21:40:43,389 - __main__ - INFO - Successfully chunked document into 12 chunks
+2025-09-19 21:40:43,390 - __main__ - INFO - Processing document 2/3: Training_For_AI_Engineer_Interns
+2025-09-19 21:40:43,987 - __main__ - INFO - Successfully downloaded document via web scraping: 6572 characters
+2025-09-19 21:40:43,988 - __main__ - INFO - Successfully chunked document into 8 chunks
+2025-09-19 21:40:43,989 - __main__ - INFO - Processing document 3/3: Intern_FAQ_AI_Bootcamp
+2025-09-19 21:40:44,738 - __main__ - INFO - Successfully downloaded document via web scraping: 23660 characters
+2025-09-19 21:40:44,740 - __main__ - INFO - Successfully chunked document into 30 chunks
+2025-09-19 21:40:44,758 - __main__ - INFO - Saved 50 chunks to source_documents/all_chunks.json
+2025-09-19 21:40:44,761 - __main__ - INFO - Generated processing report: source_documents/processing_report.json
+2025-09-19 21:40:44,761 - __main__ - INFO - Document ingestion complete! Processed 3/3 documents, Generated 50 chunks in 2.21s
+2025-09-19 21:40:44,761 - __main__ - INFO - Output validation successful
+2025-09-19 21:40:44,761 - __main__ - INFO - Document ingestion pipeline completed successfully!
+2025-09-19 22:04:27,503 - ingest - INFO - Loading embedding model: BAAI/bge-base-en-v1.5
+2025-09-19 22:04:27,544 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-19 22:04:27,544 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2025-09-19 22:04:40,113 - ingest - INFO - Successfully loaded embedding model: BAAI/bge-base-en-v1.5
+2025-09-19 22:04:42,670 - ingest - INFO - Generated 3 embeddings in batch
+2025-09-19 22:04:42,670 - ingest - INFO - Loading embedding model: BAAI/bge-base-en-v1.5
+2025-09-19 22:04:42,671 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-19 22:04:42,672 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2025-09-19 22:04:44,512 - ingest - INFO - Successfully loaded embedding model: BAAI/bge-base-en-v1.5
+2025-09-19 22:04:44,514 - ingest - INFO - Generating embeddings for 2 chunks
+2025-09-19 22:04:44,974 - ingest - INFO - Generated 2 embeddings in batch
+2025-09-19 22:04:44,976 - ingest - INFO - Successfully chunked document into 2 chunks with embeddings
+2025-09-19 22:04:44,976 - ingest - INFO - Loading embedding model: BAAI/bge-base-en-v1.5
+2025-09-19 22:04:44,976 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-19 22:04:44,976 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2025-09-19 22:04:46,610 - ingest - INFO - Successfully loaded embedding model: BAAI/bge-base-en-v1.5
+2025-09-19 22:05:57,204 - __main__ - INFO - Validating environment...
+2025-09-19 22:05:57,204 - __main__ - INFO - Environment validation successful
+2025-09-19 22:05:57,204 - __main__ - INFO - Running integration tests...
+2025-09-19 22:05:57,204 - __main__ - INFO - Loading embedding model: BAAI/bge-base-en-v1.5
+2025-09-19 22:05:57,226 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-19 22:05:57,226 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2025-09-19 22:05:59,366 - __main__ - INFO - Successfully loaded embedding model: BAAI/bge-base-en-v1.5
+2025-09-19 22:05:59,367 - __main__ - INFO - Embedding service initialized successfully
+2025-09-19 22:05:59,367 - __main__ - WARNING - Google credentials file 'credentials.json' not found. Falling back to web scraping method.
+2025-09-19 22:05:59,367 - __main__ - INFO - All integration tests passed!
+2025-09-19 22:05:59,367 - __main__ - INFO - Loading embedding model: BAAI/bge-base-en-v1.5
+2025-09-19 22:05:59,368 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-19 22:05:59,368 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2025-09-19 22:06:00,829 - __main__ - INFO - Successfully loaded embedding model: BAAI/bge-base-en-v1.5
+2025-09-19 22:06:00,829 - __main__ - INFO - Embedding service initialized successfully
+2025-09-19 22:06:00,829 - __main__ - WARNING - Google credentials file 'credentials.json' not found. Falling back to web scraping method.
+2025-09-19 22:06:00,829 - __main__ - INFO - Starting enterprise document ingestion pipeline...
+2025-09-19 22:06:00,829 - __main__ - INFO - Processing document 1/3: AI_Bootcamp_Journey_Learning_Path
+2025-09-19 22:06:01,889 - __main__ - INFO - Successfully downloaded document via web scraping: 9636 characters
+2025-09-19 22:06:01,892 - __main__ - INFO - Generating embeddings for 12 chunks
+2025-09-19 22:06:02,715 - __main__ - INFO - Generated 12 embeddings in batch
+2025-09-19 22:06:02,715 - __main__ - INFO - Successfully chunked document into 12 chunks with embeddings
+2025-09-19 22:06:02,716 - __main__ - INFO - Processing document 2/3: Training_For_AI_Engineer_Interns
+2025-09-19 22:06:03,568 - __main__ - INFO - Successfully downloaded document via web scraping: 6572 characters
+2025-09-19 22:06:03,569 - __main__ - INFO - Generating embeddings for 8 chunks
+2025-09-19 22:06:04,005 - __main__ - INFO - Generated 8 embeddings in batch
+2025-09-19 22:06:04,006 - __main__ - INFO - Successfully chunked document into 8 chunks with embeddings
+2025-09-19 22:06:04,006 - __main__ - INFO - Processing document 3/3: Intern_FAQ_AI_Bootcamp
+2025-09-19 22:06:05,050 - __main__ - INFO - Successfully downloaded document via web scraping: 23660 characters
+2025-09-19 22:06:05,051 - __main__ - INFO - Generating embeddings for 30 chunks
+2025-09-19 22:06:06,652 - __main__ - INFO - Generated 30 embeddings in batch
+2025-09-19 22:06:06,653 - __main__ - INFO - Successfully chunked document into 30 chunks with embeddings
+2025-09-19 22:06:06,725 - __main__ - INFO - Saved 50 embeddings to source_documents/embeddings.json
+2025-09-19 22:06:06,737 - __main__ - INFO - Saved 50 chunks to source_documents/all_chunks.json (50 with embeddings)
+2025-09-19 22:06:06,769 - __main__ - INFO - Generated processing report: source_documents/processing_report.json
+2025-09-19 22:06:06,769 - __main__ - INFO - Document ingestion complete! Processed 3/3 documents, Generated 50 chunks in 5.94s
+2025-09-19 22:06:06,769 - __main__ - INFO - Output validation successful
+2025-09-19 22:06:06,769 - __main__ - INFO - Document ingestion pipeline completed successfully!
+2025-09-19 22:06:39,545 - __main__ - INFO - Validating environment...
+2025-09-19 22:06:39,545 - __main__ - INFO - Environment validation successful
+2025-09-19 22:06:39,545 - __main__ - INFO - Running integration tests...
+2025-09-19 22:06:39,545 - __main__ - INFO - Loading embedding model: BAAI/bge-base-en-v1.5
+2025-09-19 22:06:39,573 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-19 22:06:39,574 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2025-09-19 22:06:41,700 - __main__ - INFO - Successfully loaded embedding model: BAAI/bge-base-en-v1.5
+2025-09-19 22:06:41,701 - __main__ - INFO - Embedding service initialized successfully
+2025-09-19 22:06:41,702 - __main__ - WARNING - Google credentials file 'credentials.json' not found. Falling back to web scraping method.
+2025-09-19 22:06:41,703 - __main__ - INFO - All integration tests passed!
+2025-09-19 22:06:41,703 - __main__ - WARNING - Google credentials file 'credentials.json' not found. Falling back to web scraping method.
+2025-09-19 22:06:41,703 - __main__ - INFO - Starting enterprise document ingestion pipeline...
+2025-09-19 22:06:41,703 - __main__ - INFO - Processing document 1/3: AI_Bootcamp_Journey_Learning_Path
+2025-09-19 22:06:42,634 - __main__ - INFO - Successfully downloaded document via web scraping: 9636 characters
+2025-09-19 22:06:42,635 - __main__ - WARNING - No embedding service provided, skipping embedding generation
+2025-09-19 22:06:42,635 - __main__ - INFO - Successfully chunked document into 12 chunks with embeddings
+2025-09-19 22:06:42,635 - __main__ - INFO - Processing document 2/3: Training_For_AI_Engineer_Interns
+2025-09-19 22:06:43,262 - __main__ - INFO - Successfully downloaded document via web scraping: 6572 characters
+2025-09-19 22:06:43,263 - __main__ - WARNING - No embedding service provided, skipping embedding generation
+2025-09-19 22:06:43,263 - __main__ - INFO - Successfully chunked document into 8 chunks with embeddings
+2025-09-19 22:06:43,264 - __main__ - INFO - Processing document 3/3: Intern_FAQ_AI_Bootcamp
+2025-09-19 22:06:43,909 - __main__ - INFO - Successfully downloaded document via web scraping: 23660 characters
+2025-09-19 22:06:43,910 - __main__ - WARNING - No embedding service provided, skipping embedding generation
+2025-09-19 22:06:43,910 - __main__ - INFO - Successfully chunked document into 30 chunks with embeddings
+2025-09-19 22:06:43,918 - __main__ - INFO - Saved 50 chunks to source_documents/all_chunks.json (0 with embeddings)
+2025-09-19 22:06:43,920 - __main__ - INFO - Generated processing report: source_documents/processing_report.json
+2025-09-19 22:06:43,920 - __main__ - INFO - Document ingestion complete! Processed 3/3 documents, Generated 50 chunks in 2.22s
+2025-09-19 22:06:43,920 - __main__ - INFO - Output validation successful
+2025-09-19 22:06:43,920 - __main__ - INFO - Document ingestion pipeline completed successfully!
+2025-09-19 22:07:12,302 - __main__ - INFO - Validating environment...
+2025-09-19 22:07:12,302 - __main__ - INFO - Environment validation successful
+2025-09-19 22:07:12,302 - __main__ - INFO - Running integration tests...
+2025-09-19 22:07:12,302 - __main__ - INFO - Loading embedding model: BAAI/bge-base-en-v1.5
+2025-09-19 22:07:12,342 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-19 22:07:12,342 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2025-09-19 22:07:12,409 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-09-19 22:07:12,538 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /BAAI/bge-base-en-v1.5/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-19 22:07:12,548 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json HTTP/1.1" 200 0
+2025-09-19 22:07:12,636 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-19 22:07:12,647 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-19 22:07:12,737 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-19 22:07:12,752 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-19 22:07:12,838 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /BAAI/bge-base-en-v1.5/resolve/main/README.md HTTP/1.1" 307 0
+2025-09-19 22:07:12,847 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/README.md HTTP/1.1" 200 0
+2025-09-19 22:07:12,939 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /BAAI/bge-base-en-v1.5/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-19 22:07:12,950 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json HTTP/1.1" 200 0
+2025-09-19 22:07:13,040 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /BAAI/bge-base-en-v1.5/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-09-19 22:07:13,050 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/sentence_bert_config.json HTTP/1.1" 200 0
+2025-09-19 22:07:13,137 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /BAAI/bge-base-en-v1.5/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-09-19 22:07:13,223 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /BAAI/bge-base-en-v1.5/resolve/main/config.json HTTP/1.1" 307 0
+2025-09-19 22:07:13,233 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json HTTP/1.1" 200 0
+2025-09-19 22:07:13,381 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /BAAI/bge-base-en-v1.5/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-09-19 22:07:13,391 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-19 22:07:13,482 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/BAAI/bge-base-en-v1.5/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-19 22:07:13,592 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /BAAI/bge-base-en-v1.5/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-09-19 22:07:13,602 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-09-19 22:07:13,696 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/BAAI/bge-base-en-v1.5 HTTP/1.1" 200 148788
+2025-09-19 22:07:14,189 - __main__ - INFO - Successfully loaded embedding model: BAAI/bge-base-en-v1.5
+2025-09-19 22:07:14,190 - __main__ - INFO - Embedding service initialized successfully
+2025-09-19 22:07:14,190 - __main__ - WARNING - Google credentials file 'credentials.json' not found. Falling back to web scraping method.
+2025-09-19 22:07:14,191 - __main__ - INFO - All integration tests passed!
+2025-09-19 22:07:14,191 - __main__ - INFO - Loading embedding model: BAAI/bge-base-en-v1.5
+2025-09-19 22:07:14,192 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-19 22:07:14,192 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2025-09-19 22:07:14,288 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /BAAI/bge-base-en-v1.5/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-19 22:07:14,298 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json HTTP/1.1" 200 0
+2025-09-19 22:07:14,398 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-19 22:07:14,408 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-19 22:07:14,495 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-09-19 22:07:14,507 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-09-19 22:07:14,606 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /BAAI/bge-base-en-v1.5/resolve/main/README.md HTTP/1.1" 307 0
+2025-09-19 22:07:14,616 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/README.md HTTP/1.1" 200 0
+2025-09-19 22:07:14,704 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /BAAI/bge-base-en-v1.5/resolve/main/modules.json HTTP/1.1" 307 0
+2025-09-19 22:07:14,714 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json HTTP/1.1" 200 0
+2025-09-19 22:07:14,804 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /BAAI/bge-base-en-v1.5/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-09-19 22:07:14,815 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/sentence_bert_config.json HTTP/1.1" 200 0
+2025-09-19 22:07:14,904 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /BAAI/bge-base-en-v1.5/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-09-19 22:07:14,992 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /BAAI/bge-base-en-v1.5/resolve/main/config.json HTTP/1.1" 307 0
+2025-09-19 22:07:15,002 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json HTTP/1.1" 200 0
+2025-09-19 22:07:15,124 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /BAAI/bge-base-en-v1.5/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-09-19 22:07:15,134 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/tokenizer_config.json HTTP/1.1" 200 0
+2025-09-19 22:07:15,224 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/BAAI/bge-base-en-v1.5/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-09-19 22:07:15,339 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /BAAI/bge-base-en-v1.5/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-09-19 22:07:15,349 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-09-19 22:07:15,444 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/BAAI/bge-base-en-v1.5 HTTP/1.1" 200 148788
+2025-09-19 22:07:15,603 - __main__ - INFO - Successfully loaded embedding model: BAAI/bge-base-en-v1.5
+2025-09-19 22:07:15,603 - __main__ - INFO - Embedding service initialized successfully
+2025-09-19 22:07:15,603 - __main__ - WARNING - Google credentials file 'credentials.json' not found. Falling back to web scraping method.
+2025-09-19 22:07:15,603 - __main__ - INFO - Starting enterprise document ingestion pipeline...
+2025-09-19 22:07:15,603 - __main__ - INFO - Processing document 1/3: AI_Bootcamp_Journey_Learning_Path
+2025-09-19 22:07:15,603 - __main__ - DEBUG - Extracted document ID: 18O8Xpbognhi3GYJeHDYbBRHGAl5-a4DL
+2025-09-19 22:07:15,604 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): docs.google.com:443
+2025-09-19 22:07:15,918 - urllib3.connectionpool - DEBUG - https://docs.google.com:443 "GET /document/d/18O8Xpbognhi3GYJeHDYbBRHGAl5-a4DL/export?format=txt HTTP/1.1" 307 None
+2025-09-19 22:07:15,919 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): doc-0o-1g-docstext.googleusercontent.com:443
+2025-09-19 22:07:16,402 - urllib3.connectionpool - DEBUG - https://doc-0o-1g-docstext.googleusercontent.com:443 "GET /export/e6hpso97lrhpva19l3uocm525o/rs4u12etnj4mtp3hcdjr3cfm5c/1758344835000/100574353221996474859/*/18O8Xpbognhi3GYJeHDYbBRHGAl5-a4DL?format=txt HTTP/1.1" 200 None
+2025-09-19 22:07:16,402 - __main__ - INFO - Successfully downloaded document via web scraping: 9636 characters
+2025-09-19 22:07:16,403 - __main__ - INFO - Generating embeddings for 8 chunks
+2025-09-19 22:07:16,888 - __main__ - INFO - Generated 8 embeddings in batch
+2025-09-19 22:07:16,888 - __main__ - INFO - Successfully chunked document into 8 chunks with embeddings
+2025-09-19 22:07:16,889 - __main__ - DEBUG - Saved document: AI_Bootcamp_Journey_Learning_Path
+2025-09-19 22:07:16,889 - __main__ - INFO - Processing document 2/3: Training_For_AI_Engineer_Interns
+2025-09-19 22:07:16,889 - __main__ - DEBUG - Extracted document ID: 1NfmEDyxrJ7Tz7Wq4lAJHx1fQ4bPpM5v07dPTM4pjOsM
+2025-09-19 22:07:17,030 - urllib3.connectionpool - DEBUG - https://docs.google.com:443 "GET /document/d/1NfmEDyxrJ7Tz7Wq4lAJHx1fQ4bPpM5v07dPTM4pjOsM/export?format=txt HTTP/1.1" 307 0
+2025-09-19 22:07:17,031 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): doc-0g-c4-docstext.googleusercontent.com:443
+2025-09-19 22:07:17,399 - urllib3.connectionpool - DEBUG - https://doc-0g-c4-docstext.googleusercontent.com:443 "GET /export/e6hpso97lrhpva19l3uocm525o/263ec225iajr385h99645c72dk/1758344835000/114588341874056644793/*/1NfmEDyxrJ7Tz7Wq4lAJHx1fQ4bPpM5v07dPTM4pjOsM?format=txt HTTP/1.1" 200 None
+2025-09-19 22:07:17,403 - __main__ - INFO - Successfully downloaded document via web scraping: 6572 characters
+2025-09-19 22:07:17,403 - __main__ - INFO - Generating embeddings for 6 chunks
+2025-09-19 22:07:17,844 - __main__ - INFO - Generated 6 embeddings in batch
+2025-09-19 22:07:17,844 - __main__ - INFO - Successfully chunked document into 6 chunks with embeddings
+2025-09-19 22:07:17,844 - __main__ - DEBUG - Saved document: Training_For_AI_Engineer_Interns
+2025-09-19 22:07:17,845 - __main__ - INFO - Processing document 3/3: Intern_FAQ_AI_Bootcamp
+2025-09-19 22:07:17,845 - __main__ - DEBUG - Extracted document ID: 1RDsjDgszRw5yvjca24aqhmQu2UCrdWdVB3Bb_jd6V6Q
+2025-09-19 22:07:17,959 - urllib3.connectionpool - DEBUG - https://docs.google.com:443 "GET /document/d/1RDsjDgszRw5yvjca24aqhmQu2UCrdWdVB3Bb_jd6V6Q/export?format=txt HTTP/1.1" 307 None
+2025-09-19 22:07:17,966 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): doc-0s-c4-docstext.googleusercontent.com:443
+2025-09-19 22:07:18,428 - urllib3.connectionpool - DEBUG - https://doc-0s-c4-docstext.googleusercontent.com:443 "GET /export/e6hpso97lrhpva19l3uocm525o/cdtva48p9d5m26aeek76ekpm6s/1758344835000/114588341874056644793/*/1RDsjDgszRw5yvjca24aqhmQu2UCrdWdVB3Bb_jd6V6Q?format=txt HTTP/1.1" 200 None
+2025-09-19 22:07:18,446 - __main__ - INFO - Successfully downloaded document via web scraping: 23660 characters
+2025-09-19 22:07:18,447 - __main__ - INFO - Generating embeddings for 20 chunks
+2025-09-19 22:07:19,909 - __main__ - INFO - Generated 20 embeddings in batch
+2025-09-19 22:07:19,910 - __main__ - INFO - Successfully chunked document into 20 chunks with embeddings
+2025-09-19 22:07:19,911 - __main__ - DEBUG - Saved document: Intern_FAQ_AI_Bootcamp
+2025-09-19 22:07:19,956 - __main__ - INFO - Saved 34 embeddings to source_documents/embeddings.json
+2025-09-19 22:07:19,961 - __main__ - INFO - Saved 34 chunks to source_documents/all_chunks.json (34 with embeddings)
+2025-09-19 22:07:19,982 - __main__ - INFO - Generated processing report: source_documents/processing_report.json
+2025-09-19 22:07:19,982 - __main__ - INFO - Document ingestion complete! Processed 3/3 documents, Generated 34 chunks in 4.38s
+2025-09-19 22:07:19,982 - __main__ - INFO - Output validation successful
+2025-09-19 22:07:19,982 - __main__ - INFO - Document ingestion pipeline completed successfully!

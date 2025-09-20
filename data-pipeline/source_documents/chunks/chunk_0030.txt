@@ -1,0 +1,28 @@
+Source: Intern_FAQ_AI_Bootcamp
+Chunk 16 of 20
+Size: 1317 characters
+Hash: 6c4bd0c8b98ae7101280bcefd551c7a78a16bb647eb574f2d8190d416f25829f
+--------------------------------------------------
+* A: You can list the internship experience on LinkedIn after successfully completing the project.
+15. Q: What is the team size for the projects?
+   * A: Teams typically consist of 8 to 10 people, including product managers and engineers, depending on the scope of the project.
+16. Q: What happens after the internship in terms of job opportunities?
+   * A: The company will share your project work through social channels and pass job descriptions to the Discord channel. This may lead to job opportunities through referrals. The top performers receiving our awards will get additional benefit such as job referrals and 1:1 resume review. Please student the Award sessions for details. 
+
+
+
+
+________________
+
+
+—------------------------------------------------------------------------------------------------------------------
+Additional Intern Questions:
+
+
+1. What happens in situations when my OPT/CPT dates are 1-month into the program and ends before the next cohort? 
+        Example: I’m interested in joining Cohort 5:
+* Cohort #5 = Jun-23-2025  - Sep-12-2025
+* Cohort #6 = Sept-15-2025  - Nov-28-2025
+* Cohort #7 = Jan-19-2026  - Mar-30-2026 weeks
+* Cohort #8 = Aprl-06-2026  - Jun-19-2026 weeks
+But my OPT/CPT will only allow me to have Start Date = June 23rd and End Date = August 8th.

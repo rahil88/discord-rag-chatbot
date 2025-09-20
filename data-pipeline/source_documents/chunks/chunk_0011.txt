@@ -1,0 +1,41 @@
+Source: Training_For_AI_Engineer_Interns
+Chunk 3 of 6
+Size: 1457 characters
+Hash: ea2681bcede6373da1e5807442f194b0455d93f08ab72d4c9e53289f9a222477
+--------------------------------------------------
+* Image classification vs Object detection vs Image Segmentation | Deep Learning Tutorial 28
+         * Natural Language Processing In 5 Minutes | What Is NLP And How Does It Work? | Simplilearn
+      * Unsupervised: Clustering, Dimensionality Reduction
+         * Dimensionality Reduction
+         * Machine Learning - Dimensionality Reduction - Feature Extraction & Selection
+      * Reinforcement Learning
+         * OpenAI Plays Hide and Seek…and Breaks The Game! 🤖
+      * Generative Models
+         * What are GANs (Generative Adversarial Networks)?
+      * Anomaly Detection
+   * RLHF (Reinforced Learning with Human Feedback)
+      * Basic explanation
+      * If you need to go deeper, this course is the best
+   * Model Distillation
+      * Distilling Neural Networks | Two Minute Papers #218
+      * Quantization vs Pruning vs Distillation: Optimizing NNs for Inference
+   * Self-hosting LLMs
+      * All You Need To Know About Running LLMs Locally
+   * Fine-tuning
+      * Fine-tuning a Neural Network explained
+      * Catastrophic forgetting
+
+
+Agents- Advanced AI Concepts
+   * 4 AI Agent Strategies: (DeepLearning.AI)
+      * Reflection
+         * LangChain - Reflection Agents example
+      * Tool Use
+         * LangChain - Tool Calling        
+      * Planning
+         * LangGraph - Planning Agents
+      * Multi-agent Collaboration
+         * LangGraph: Multi-Agent Workflows
+
+
+      * Agent Evaluations

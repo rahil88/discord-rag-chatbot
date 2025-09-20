@@ -1,0 +1,49 @@
+Source: Intern_FAQ_AI_Bootcamp
+Chunk 4 of 20
+Size: 1483 characters
+Hash: 83d577d24b517e2c4fe7bbbe9d0d6b8bcdf5e2674a97a5e78a6c716c7b1c896d
+--------------------------------------------------
+* Ranking their top 3 product idea choices
+   * Want to be a Lead Engineer or not. 
+
+
+
+
+Week 5-8: Work with your AI product teams to create an AI MVP.
+* Lead Engineer: Help with System design conversations and setting up GitHub directory and local Git deployment. 
+
+
+Week 9-10: Start testing the various functionalities. Designers would be very helpful here since they know the user's mindset the best. 
+
+
+Note: The Product Manager will create the main GitHub repository. The Lead Engineer on each team should help others who are not familiar with GitHub as well as help with System Design. When you have questions please reach out to the mentors during Office Hours.  
+
+
+
+
+________________
+
+
+—-----------------------------------------------------------------------------------------------------------------
+
+
+AI PM Bootcamp FAQ
+
+
+________________
+
+
+
+
+🧑‍💻 Team Structure Overview 
+Each team is formed from participants in the PM Accelerator Program, and typically includes:
+* Product Managers – Responsible for business case development, voice of customer interviews, and market research
+* Developers – Execute the technical build
+* (Optional) Data Scientists & Designers – Added as needed, based on project complexity
+________________
+
+
+Team Size & Composition
+* Typical team size: 8–10 members
+* Larger-scope projects may be assigned bigger teams
+* Teams with multiple PMs and developers tend to launch more ambitious, successful products

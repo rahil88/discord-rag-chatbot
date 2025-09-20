@@ -1,0 +1,27 @@
+Source: Intern_FAQ_AI_Bootcamp
+Chunk 7 of 20
+Size: 1410 characters
+Hash: 7ce8cad7047622927db991780b0101688d3ceca0d7cb97187e225525fc26a3b4
+--------------------------------------------------
+* PM Only: Mon 10/13 8:00 PM—9:00 PM (EST)    AI UI/UX Design
+* PM Only: Tues 10/14 9:00 PM—10:00 PM (EST)    AI Architecture [Mentor: Adam Zhu]
+*  All - Sun 10/19 10:00 AM—11:00 AM (EST)    Office hours/Q&A sessions to clarify doubts
+Week 6: GTM - Drive users and engagement of your Al Project
+* PM Only: Mon 10/20 8:00 PM—10:00 PM (EST)    Go-to-market Strategy Session
+* All - Sun 10/26 10:00 AM—11:00 AM (EST)    Office hours/Q&A sessions to clarify doubts
+Week 7: Advanced Prompt Engineering
+* PM Only: Tues 10/28 8PM—10 PM (EST)    Prompt Engineering Session [Mentor: Adam Zhu]
+* All - Sun 11/2 10 AM—11 AM (EST)    Office hours/Q&A sessions to clarify doubts
+Week 8: Advanced Prompt Engineering
+* PM Only: Tues 11/4 8 PM—10 PM (EST)    No-code Tools Session  [Mentor: Adam Zhu]
+* All - Sun 11/9 10 AM—11 AM (EST)    Office hours/Q&A sessions to clarify doubts
+Week 9: Prototyping & Building with No-Code Tools
+* PM Only: Mon 11/10 8:00 PM—10:00 PM (EST)    AI Product Portfolio Development
+* All - Sun 11/16 10:00 AM—11:00 AM (EST)    Office hours/Q&A sessions to clarify doubts
+
+
+Week 10: Al PM Resume
+* PM Only: On-Demand Schedule your 1:1 resume review with our Executive Resume Coach
+* All: Sun 11/23 10:00 AM—11:00 AM (EST)    Office hours/Q&A sessions to clarify doubts
+Week 11: Al PM Interview and Product Demo
+*  PM Only: Mon 11/24 10:00 AM—12:00 PM (EST)    AI PM Interview

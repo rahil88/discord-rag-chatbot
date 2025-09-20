@@ -1,0 +1,11 @@
+Source: Intern_FAQ_AI_Bootcamp
+Chunk 29 of 30
+Size: 489 characters
+Hash: a7133cca72a6318624febb40b335b7c9d0f9053ae0e64678382c143e72248200
+--------------------------------------------------
+6. How many interns (engineers & designers) should be included in a team? 
+* Usually we have 1 designer, 2 back-end, 1 front-end, 1 data scientist per team. Once each team meet the basic number of interns, all the un matched interns can reach out to each team lead to the team they are interested in.
+
+
+7. Considering the CPT/OPT requirement, can my end date for the internship be past the cohort end date? 
+* By default, the team can extend the end date past the cohort time/schedule

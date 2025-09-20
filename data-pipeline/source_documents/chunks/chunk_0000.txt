@@ -1,0 +1,36 @@
+Source: AI_Bootcamp_Journey_Learning_Path
+Chunk 0 of 8
+Size: 1485 characters
+Hash: 33560de4fc22234b8a6161e0a91a16df2f4d42cdbd33b5c6a4e968ac77e4dfe3
+--------------------------------------------------
+﻿Bootcamp Journey
+Use this document as a high-level overview of your journey. 
+This document will reference both these aspects: 
+* Technical Skills Development
+   * Core ML/AI Concepts
+   * Gen AI & Data Engineering
+   * MLOps & Deployment 
+* Project-Based Learning
+   * Agile Scrum Methodology
+   * Team Collaborations
+   * Real-world Applications
+
+
+Project Timeline
+Here is a high-level timeline of your 11-week journey.
+Week 1 - 11 Agenda for AI PM Bootcamp 
+* Week 1: Learning and Onboarding Study all the AI knowledge: 
+   * Training for AI Engineers
+   * Engineers’ Training Youtube Playlist
+   * Training of AI Designers
+   * Designers’ Training Playlist
+   * Engineers: Working on Job Assistant Agent or Discord RAG FAQ Chatbot
+      * Make sure to join Office hours to discuss your thoughts and issues with these projects. (every Sundays)
+
+   * Week 2: Learning and Onboarding Study all the AI knowledge: 
+   * Training for AI Engineers
+   * Engineers’ Training Youtube Playlist
+   * Training of AI Designers
+   * Designers’ Training Playlist
+   * Designers:  Join Pitch Day & Team Match (within 24 fill out AI products interested in on Team Match.xls for Cohort 6) - Please wait for the Cohort6 tab to be created by Dr. Nancy in spreadsheet before enter Name in “Interested” column
+   * Designers and PM’s need to reach out to each other and determine if they are a good match. Each team can initially have 2 designers. (1 - Senior + 1 - Junior)

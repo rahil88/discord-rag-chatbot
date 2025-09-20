@@ -1,0 +1,27 @@
+Source: Intern_FAQ_AI_Bootcamp
+Chunk 3 of 20
+Size: 1462 characters
+Hash: 5ca9083ff4c544a86c688142b227fb9b2b72bb3a993b5336ede279fabca7b30a
+--------------------------------------------------
+* Designers’ Training Playlist
+        Engineers:Continue working on the project you have chosen (more details will be provided in discord) 
+* Join the discord channel to discuss the assignment you chose
+* Make sure to attend Office Hours to speak with mentors to discuss your progress. 
+        Designers: Make sure to join Pitch Day (check your calendar for invitations). This is where you will hear about the Product Mangers idea and join a team by filling out a Team Match spreadsheet. (more details about the spreadsheet will be discussed on this date)
+
+
+Week 3: Continue making progress
+* Engineers:  Finish up your assignment and share your progress. We will discuss more on how to share as we get closer to week 3
+* Designers: Work on Interviewing Customers to see if AI ideas can be validated & start creating High-Fidelity designers for next week’s Pitch Day.  
+        
+Week 4: All: Join Pitch Day where Product Mangers and Designers will demonstrate their Ai product ideas and High-Fidelity designs after user research and gathering Voice of the Customer feedback. 
+* Engineers will then fill out a Google form: 
+   * Sharing their tech stack years of experience
+   * Ranking their top 3 product idea choices
+   * Want to be a Lead Engineer or not. 
+
+
+
+
+Week 5-8: Work with your AI product teams to create an AI MVP.
+* Lead Engineer: Help with System design conversations and setting up GitHub directory and local Git deployment.

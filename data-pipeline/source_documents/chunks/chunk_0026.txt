@@ -1,0 +1,15 @@
+Source: Intern_FAQ_AI_Bootcamp
+Chunk 12 of 20
+Size: 1277 characters
+Hash: b776907b24240b5609aa53009d677870f5b19fe807aef5e1462d690670799dd6
+--------------------------------------------------
+* The teams consist of software developers, data scientists, and product managers. The internship includes working on tasks like voice of customer interviews, MVP development, and go-to-market strategies.
+3. Application and Selection Process:
+   * Over 2,000 applications were received. Applicants will undergo a technical assessment involving a coding task, which is crucial for selection.
+   * The focus is on finding candidates with strong software engineering skills, AI knowledge, and the ability to work as team players. Dr. Nancy Li emphasizes the importance of commitment and dedication.
+4. Timeline and Commitment:
+   * The internship runs for 3 months, with a minimum commitment of 10 hours per week. Successful completion of the project may lead to further opportunities.
+5. Resources and Learning:
+   * Participants will have access to technical advisors and recommended courses to improve their AI skills. Dr. Nancy Li encourages continuous learning and upskilling in areas like AI and cloud computing. Here is the training doc for all interns.
+6. Evaluation and Outcome:
+   * The technical assessment will determine who gets selected. The evaluation includes both the coding quality and the candidate’s ability to collaborate effectively within the team.

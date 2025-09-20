@@ -1,0 +1,39 @@
+Source: Intern_FAQ_AI_Bootcamp
+Chunk 16 of 30
+Size: 782 characters
+Hash: 04a0b83f5ac7b8599d2af6342edbfc224700f83dca610bee7de5f9be7abe597e
+--------------------------------------------------
+**Team Lead,** please send the developer names and awards to my team in the private group chat. 
+
+
+Thank you for all our interns' great efforts! 
+
+
+PS: If you have other recommendations on the award systems, please let me know.
+________________
+
+
+
+
+ 📂 How to View All Discord Channels
+1. Click the drop-down triangle next to the name
+2. Select “Show All Channels” to make sure you can see everything in the server
+3. Go to the “Product Manager Accelerator” server (top left)
+
+
+________________
+
+
+—------------------------------------------------------------------------------------------------------------------
+
+
+AI Engineer Group Interview and FAQ 
+- PM Accelerator 
+
+
+
+
+
+
+Overview of the AI Engineer Internship Process:
+1. Introduction and Setup:

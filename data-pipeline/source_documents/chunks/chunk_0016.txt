@@ -1,0 +1,30 @@
+Source: Intern_FAQ_AI_Bootcamp
+Chunk 2 of 20
+Size: 1245 characters
+Hash: 7ea5bb432a06ebd6d3ef119d5e29d6da6b5f1a9efa776264a46b9c11bf467582
+--------------------------------------------------
+IMPORTANT: The best way to communicate with us is on Discord channels and tag Marla for operations questions. Please don’t DM Dr. Nancy Li. Put your questions in the public channel, someone in our team will get back to you. 
+
+
+________________
+ 
+Weekly Intern Expectations: 
+* Note: Interns are considered: Designers, Data Scientists & Engineers (frontend, backend, fullstack)
+
+
+Week 1: 
+All: Watch onboarding  and learning videos based on if you are designer or engineer: 
+* Engineers’ Training Playlist
+* Designers’ Training Playlist
+        Engineers: Choose of of the 2 products that will be provided in Discord. 
+* Discord Rag Chatbot
+* Job Tracker Agent(s)
+* Join the discord channel to discuss the assignment you chose
+* Make sure to attend Office Hours to speak with mentors to discuss your progress.
+Week 2: 
+All: Watch onboarding  and learning videos based on if you are designer or engineer: 
+* Engineers’ Training Playlist
+* Designers’ Training Playlist
+        Engineers:Continue working on the project you have chosen (more details will be provided in discord) 
+* Join the discord channel to discuss the assignment you chose
+* Make sure to attend Office Hours to speak with mentors to discuss your progress.

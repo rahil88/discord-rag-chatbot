@@ -1,0 +1,26 @@
+Source: AI_Bootcamp_Journey_Learning_Path
+Chunk 1 of 8
+Size: 1452 characters
+Hash: 1cff6f5622eba346aa00b762d6c29638db53a10ed8062f442575e8816c660bbf
+--------------------------------------------------
+* Designers and PM’s need to reach out to each other and determine if they are a good match. Each team can initially have 2 designers. (1 - Senior + 1 - Junior)
+   * Format: Full_Name(Role - Senior/Junior)
+   * Senior 2 or more years of experience
+   * After designers join the team: Discuss User Interview process [PM to lead this discussion] ⇒Prioritize Fast matching this week
+   * Main communication = Discord (check daily)
+   * Engineers: Working on Job Assistant Agent or Discord RAG FAQ Chatbot
+   * Make sure to join Office hours to discuss your thoughts and issues with these projects. 
+
+      * Week 3: Continue development
+      * Designer building High-Fidelity Designs 
+      * User Interviews (continue)
+      * Prepare for Week 4 presentation to Engineers/Data Scientists
+      * Engineers: Working on Job Assistant Agent or Discord RAG FAQ Chatbot
+      * Make sure to join Office hours to discuss your thoughts and issues with these projects. 
+      * Submit your code and video walk through of code logic and provide a running example by filling out this Google Form 
+
+         * Week 4: Prepare and Join Pitch Day & Ranking
+         * Designers & PM present to Engineers
+         * Engineers join Zoom Pitch Day and fill out Google Ranking form. (Lead Engineers get Ranking choice priority)  
+         * Lead Engineer Responsibilities = 
+         * Lead System Architecture Design (Bring thoughts to Office Hours)

@@ -1,0 +1,32 @@
+Source: Training_For_AI_Engineer_Interns
+Chunk 2 of 6
+Size: 1487 characters
+Hash: da45c99ec8dafa677e8855ec10fcc31055677a2f10d40a58e41447c598d4b01a
+--------------------------------------------------
+* Conversational Agents: Group of AI agents able to assume roles and plan/discuss/validate answer before providing them.
+      * Here is a lecture from Andrew Ng demonstrating the Agentic Workflows and why they are game-changer
+* FastAPI = Web framework for building APIs with Python based on standard Python type hints.
+* Docker for DataScientists 
+
+
+
+
+Advanced AI Concepts
+
+
+Machine Learning Master = Great source for complex concepts
+   * Overfitting and underfitting 
+      * Underfitting & Overfitting - Explained
+      * Machine Learning Fundamentals: Bias and Variance
+   * MLOps What is MLOps?
+   * MLOPS ZoomCamp : 9-Week Course on Productionizing ML Services
+   * Feature Engineering What is Feature Engineering?
+   * Hyperparameter Tunning Parameters vs hyperparameters in machine learning
+   * Model Deployment Machine Learning Model Deployment Explained | All About ML Model Deployment
+   * Framing the AI task
+      * Data cleaning in production time https://youtu.be/P8ERBy91Y90?si=yZ37-ScTbjtK4Af
+      * Sampling Frequency
+      * Supervised: Classification, Prediction, Regression, Recommendation, Named Entity Recognition (NER), Speech Recognition, Object Detection, Segmentation
+         * Image classification vs Object detection vs Image Segmentation | Deep Learning Tutorial 28
+         * Natural Language Processing In 5 Minutes | What Is NLP And How Does It Work? | Simplilearn
+      * Unsupervised: Clustering, Dimensionality Reduction

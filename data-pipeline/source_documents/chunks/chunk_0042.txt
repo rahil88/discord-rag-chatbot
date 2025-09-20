@@ -1,0 +1,14 @@
+Source: Intern_FAQ_AI_Bootcamp
+Chunk 22 of 30
+Size: 968 characters
+Hash: 97f2221a68339bbb4ea8e4ce0112e2c4f00a8c3a74d83c209f698144d6f90c76
+--------------------------------------------------
+9. Q: What is the evaluation process for the technical assessment?
+   * A: Our tech recruiter will review your tech assessment one by one.
+10. Q: Will there be any technical courses provided?
+   * A: Recommended courses will be provided, and most of them are free. You can check out our free training here. The most expensive ones are around $50. If you already have all the required skills, you don't need to take additional courses. However, if you don't have the necessary AI skills, you will need to pay for your own AI courses. Most of these courses are offered by Deeplearning.ai.
+11. Q: Will I have access to the Discord channel before being selected?
+   * A: No, only selected participants will gain access to the Discord channel.
+12. Q: Can I join the internship in the next cohort?
+   * A: Yes. Make sure to communicate with our team. We will see if you can fit into the next cohort.
+13. Q: What happens if I don’t meet the coding skill requirements?

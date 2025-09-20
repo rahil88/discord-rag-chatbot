@@ -1,0 +1,43 @@
+Source: Intern_FAQ_AI_Bootcamp
+Chunk 11 of 20
+Size: 1474 characters
+Hash: fe8c7126a967d8001c27c6db7584e2fc7c690ce5f5049219981b5b2665bea528
+--------------------------------------------------
+**Team Lead,** please send the developer names and awards to my team in the private group chat. 
+
+
+Thank you for all our interns' great efforts! 
+
+
+PS: If you have other recommendations on the award systems, please let me know.
+________________
+
+
+
+
+ 📂 How to View All Discord Channels
+1. Click the drop-down triangle next to the name
+2. Select “Show All Channels” to make sure you can see everything in the server
+3. Go to the “Product Manager Accelerator” server (top left)
+
+
+________________
+
+
+—------------------------------------------------------------------------------------------------------------------
+
+
+AI Engineer Group Interview and FAQ 
+- PM Accelerator 
+
+
+
+
+
+
+Overview of the AI Engineer Internship Process:
+1. Introduction and Setup:
+   * The video begins with Dr. Nancy Li conducting a group interview for an AI engineer internship. Due to high demand, she explains how the Zoom meeting was initially limited to 100 participants but was later upgraded to accommodate more attendees.
+2. Internship Structure:
+   * The internship is unpaid but offers valuable hands-on experience in AI product development. Participants will work alongside product managers (PMs) and other engineers to build real-life AI products.
+   * The teams consist of software developers, data scientists, and product managers. The internship includes working on tasks like voice of customer interviews, MVP development, and go-to-market strategies.

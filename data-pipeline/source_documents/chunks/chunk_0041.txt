@@ -1,0 +1,14 @@
+Source: Intern_FAQ_AI_Bootcamp
+Chunk 21 of 30
+Size: 916 characters
+Hash: 863bf4deaaad82322cc0e4868152d1ad67331e10452c0eaf69d743a81509628e
+--------------------------------------------------
+6. Q: Can I use APIs for the AI project?
+   * A: Yes, you are encouraged to use APIs and any other necessary tools to complete your project.
+7. Q: What type of projects are being developed?
+   * A: Examples include AI-powered home renovation, inventory forecasting, price prediction, mental health consultation, and productivity tools. The projects vary depending on the cohort and team needs. Please watch the last cohort demo for project inspiration.
+8. Q: Is there a preference for the weather app’s lines of code?
+   * A: For public submissions, focus on building the app without worrying about the number of lines of code. For private submissions, ensure there are enough lines of code to be evaluated properly.
+9. Q: What is the evaluation process for the technical assessment?
+   * A: Our tech recruiter will review your tech assessment one by one.
+10. Q: Will there be any technical courses provided?

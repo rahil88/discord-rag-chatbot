@@ -1,0 +1,25 @@
+Source: Training_For_AI_Engineer_Interns
+Chunk 0 of 6
+Size: 1487 characters
+Hash: 88273dab44bb8d2676b41564fea1d649ff16bd23d534a7cdccfa0709aa40f759
+--------------------------------------------------
+﻿Key Technical Knowledge For AI Engineers 
+
+
+Basic AI Concepts
+   * Machine Learning: Systems learning patterns from data to improve performance.
+      * High-level intro, types of ML, 
+   * Deep Learning: Utilizing neural networks with many layers to model complex patterns.
+      * What is deep learning
+      * Math behind deep learning
+   * Natural Language Processing (NLP): A class of AIs aimed at processing and understanding human language.
+      * Transformers Architecture: A specific way to architect AI language models that radically improved quality, by unlocking the AI ability to focus on the right words in the sentences. This concept was first introduced by Google’s article ‘Attention is All you need’.
+         * Transformers, explained
+         * Complicated math behind it if you want to get technical. But it might hurt your brain after watching it. A lot of math…Transformer Neural Networks, ChatGPT's foundation, Clearly Explained!!!
+   * Computer Vision: Interpreting and analyzing visual information from the world.
+      * How computer vision works
+
+
+   * Large Language Models (LLMs): Large, pre-trained models used as a basis for various AI applications.
+      *  Generative AI in Nutshell - how to survive & thrive in the age of AI
+      * Tokens: The numerical representation of text that LLMs read. A token generally corresponds to 4 characters of text for common English text. So based on the size, 100 tokens ~=75 words, using ¾ rule.

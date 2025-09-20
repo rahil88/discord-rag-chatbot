@@ -1,0 +1,27 @@
+Source: Training_For_AI_Engineer_Interns
+Chunk 5 of 6
+Size: 564 characters
+Hash: e27b4f389c9d3c5ce5d89b12ba0031c33b182ebf1a2b7ca74f0ebddfe3280cfb
+--------------------------------------------------
+* (17mins) Database design tutorial. 
+* (6mins) Database schema
+* (32mins) Logical Database Design and E-R Diagrams
+* (docs) The design process
+* (docs) Applying the normalization rules
+
+
+Advanced lesson: (optional)
+* (27 hours) Meta Intro to database. 
+
+
+Python Fundamentals
+* (3h55mins) Python for beginners
+
+
+Data Manipulation using Python (Pandas, NumPy)
+* (1h49min) Python Library for Data Science
+
+
+Connecting Python to Databases (SQLAlchemy, psycopg2)
+* (8mins) Python database Connection 
+* (17mins) SQL database with Pandas and Python

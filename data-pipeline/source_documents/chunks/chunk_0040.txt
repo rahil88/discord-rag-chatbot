@@ -1,0 +1,15 @@
+Source: Intern_FAQ_AI_Bootcamp
+Chunk 20 of 30
+Size: 929 characters
+Hash: dceab07bafae2061a0de1c160f1da89f1114706d02a49dbb2b893401f25ad7c2
+--------------------------------------------------
+* A: The internship is unpaid, but it offers valuable experience and the opportunity to work on real AI projects.
+3. Q: What is the expected time commitment?
+   * A: A minimum of 10 hours per week is required. Participants can take on more work if they have the time, which can lead to bigger projects and better resume outcomes.
+4. Q: Can we use any programming language or technology stack for the project?
+   * A: There is no preference for a specific technology stack. However, most AI work typically uses Python.
+5. Q: What happens if the code is submitted privately on GitHub?
+   * A: If the code is private, it may not be adequately evaluated by the assessment tool. Public repositories are preferred for proper evaluation.
+6. Q: Can I use APIs for the AI project?
+   * A: Yes, you are encouraged to use APIs and any other necessary tools to complete your project.
+7. Q: What type of projects are being developed?
