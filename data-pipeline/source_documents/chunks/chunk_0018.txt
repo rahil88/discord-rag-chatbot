@@ -1,49 +1,51 @@
-Source: Intern_FAQ_AI_Bootcamp
-Chunk 4 of 20
-Size: 1483 characters
-Hash: 83d577d24b517e2c4fe7bbbe9d0d6b8bcdf5e2674a97a5e78a6c716c7b1c896d
+Source: Training_For_AI_Engineer_Interns
+Chunk 6 of 8
+Size: 986 characters
+Hash: 885d959eff3d1cf2a07fad04fd87c63ffec5eb5e738a912c6658f5831919e5c0
 --------------------------------------------------
-* Ranking their top 3 product idea choices
-   * Want to be a Lead Engineer or not. 
+* LangGraph - Planning Agents
+      * Multi-agent Collaboration
+         * LangGraph: Multi-Agent Workflows
+
+
+      * Agent Evaluations
+         * LangGraph: Agent Evaluations
+         * LangSmith Without LangChain/Graph (Observability, Evals)
+
+
+      * Designing with Agents in Mind (Important for Frontend developers)
+         * The Agentic Era of UX
+         * LangChain: Breakout Agentic Apps
+         * LangChain: UX for Agents, Part 1: Chat
+         * LangChain: UX for Agents, Part 2: Ambient
+         * LangChain: UX for Agents, Part 3: Spreadsheets, Generative, and Collaborative UI/UX
 
 
 
 
-Week 5-8: Work with your AI product teams to create an AI MVP.
-* Lead Engineer: Help with System design conversations and setting up GitHub directory and local Git deployment. 
 
 
-Week 9-10: Start testing the various functionalities. Designers would be very helpful here since they know the user's mindset the best. 
-
-
-Note: The Product Manager will create the main GitHub repository. The Lead Engineer on each team should help others who are not familiar with GitHub as well as help with System Design. When you have questions please reach out to the mentors during Office Hours.  
+Examples of Developing AI Products
 
 
 
 
-________________
+Create ChatGPT Application with Chat GPT API from OpenAI in Python Flask
 
 
-—-----------------------------------------------------------------------------------------------------------------
+Build AI Apps with ChatGPT and DALL-E
 
 
-AI PM Bootcamp FAQ
+Developer channel
 
 
-________________
+Introduction to Databases
 
 
+Database Basic: 
+Microsoft database foundations. 
 
 
-🧑‍💻 Team Structure Overview 
-Each team is formed from participants in the PM Accelerator Program, and typically includes:
-* Product Managers – Responsible for business case development, voice of customer interviews, and market research
-* Developers – Execute the technical build
-* (Optional) Data Scientists & Designers – Added as needed, based on project complexity
-________________
-
-
-Team Size & Composition
-* Typical team size: 8–10 members
-* Larger-scope projects may be assigned bigger teams
-* Teams with multiple PMs and developers tend to launch more ambitious, successful products
+SQL Basics and Advanced Queries
+* (58mins) Learn SQL in 1 hour 
+* (docs) SQL reference

@@ -1,22 +1,28 @@
 Source: Intern_FAQ_AI_Bootcamp
-Chunk 13 of 20
-Size: 1408 characters
-Hash: cf7beb0c82bea4fe7d24abc771abcd37c2ee2bac49e754e5cfe32bfc0c82be7e
+Chunk 7 of 30
+Size: 869 characters
+Hash: 27bc85cbab18f0f613190a5aa425282abc62ca81e496f185290cafe7cc573d92
 --------------------------------------------------
-6. Evaluation and Outcome:
-   * The technical assessment will determine who gets selected. The evaluation includes both the coding quality and the candidate’s ability to collaborate effectively within the team.
-   * Participants who excel may receive an AI engineering certification and opportunities to list the internship on LinkedIn. The internship also provides exposure to job opportunities through the network and social media channels of Dr. Nancy Li.
+* Developers – Execute the technical build
+* (Optional) Data Scientists & Designers – Added as needed, based on project complexity
+________________
 
 
+Team Size & Composition
+* Typical team size: 8–10 members
+* Larger-scope projects may be assigned bigger teams
+* Teams with multiple PMs and developers tend to launch more ambitious, successful products
+________________
 
 
-Q&A Session:
-1. Q: What is the start date of the internship?
-   * A: The earliest start date is next week, depending on the completion of the assessment. The internship runs for 3 months per year. The current cohort is from Sept 15 to November 28th. Please refer to your offer letter for the exact date.
-2. Q: Is the internship paid or unpaid?
-   * A: The internship is unpaid, but it offers valuable experience and the opportunity to work on real AI projects.
-3. Q: What is the expected time commitment?
-   * A: A minimum of 10 hours per week is required. Participants can take on more work if they have the time, which can lead to bigger projects and better resume outcomes.
-4. Q: Can we use any programming language or technology stack for the project?
-   * A: There is no preference for a specific technology stack. However, most AI work typically uses Python.
-5. Q: What happens if the code is submitted privately on GitHub?
+Key Recommendations
+* At least 3 product managers per team to divide user research, roadmap, and GTM work
+* At least 3 developers for faster development and technical redundancy
+* Data scientists and designers are optional based on your product goals
+________________
+
+
+📌 The more balanced and collaborative your team, the higher the chance of building a real, launch-ready product. Let us know if you'd like support building your team or scoping your idea!
+
+
+Cohort Schedule

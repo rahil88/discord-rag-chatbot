@@ -1,24 +1,24 @@
 Source: Intern_FAQ_AI_Bootcamp
-Chunk 6 of 20
-Size: 1465 characters
-Hash: 7d4c237f1b86232d5b3549d035e450c596d8dfcf893630e8758d4b0ce2f0e14e
+Chunk 0 of 30
+Size: 929 characters
+Hash: e5118433e708dbf3cfe38f15616c11cc32544f475a7e92e68e6ef172a1b847ed
 --------------------------------------------------
-* All Engineers: Wed 9/17 9 PM—10 PM (EST)  Tech Ownership - [Mentor: Adam Zhu]
-* All - Sun 9/21 10 AM—11 AM (EST)    Office hours/Q&A sessions to clarify doubts
-Week 2: End-to-End Al Product Management Lifecycle
-* PM Only: Mon 9/22 8 PM—10 PM (EST)    AI PM Life Cycle Session
-* PM & Designers : Tue 9/23 10 —12 PM (EST)  Group Project Kickoff: Pitch ideas, & assemble team 
-* All - Sun 9/28 10:00 AM—11:00 AM (EST)    Office hours/Q&A sessions to clarify doubts
-Week 3: Existing LLM and Al Models, Trade-offs, and Pricing
-* PM Only:Mon 9/29 9- 10:30 PM (EST) Structuring Your Product Team for Success [Linda Wang]
-* PM Only: Tues 9/30 8:00 PM - 10 PM (EST)  AI Models and LLM Session [Mentor: Adam Zhu]
-* All - Sun 10/5 10:00 AM - 11 AM (EST)    Office hours/Q&A sessions to clarify doubts
-Week 4: Advanced AI
-* PM Only: Tues 10/7  8:00 PM—10:00 PM (EST)    Advanced AI Session [Mentor: Adam Zhu]
-* All - Tue 10/7 10:00 AM—12:00 PM (EST)  AI Developer Team Match: Pitch ideas and team match with developers and a demo
-* All - Sun 10/12 10:00 AM—11:00 AM (EST)    Office hours/Q&A sessions to clarify doubts
-Week 5: AI UI/UX Design and AI Architecture
-* PM Only: Mon 10/13 8:00 PM—9:00 PM (EST)    AI UI/UX Design
-* PM Only: Tues 10/14 9:00 PM—10:00 PM (EST)    AI Architecture [Mentor: Adam Zhu]
-*  All - Sun 10/19 10:00 AM—11:00 AM (EST)    Office hours/Q&A sessions to clarify doubts
-Week 6: GTM - Drive users and engagement of your Al Project
+﻿Intern FAQ - AI Bootcamp 
+
+
+Here are the next steps (Intern Onboarding). 
+
+
+1. IF YOU DIDN’T watch the welcome and onboarding video by Dr. Nancy Li, make sure to watch it now. This is mandatory to know how to be successful during the internship. 
+
+
+2. Join our Developer Discord server and complete your server onboarding process. Once you join the server will have pop-ups to guide you through the process. 
+* The first thing you should do after joining discord is to update your profile with your full name and linkedin url.  This is the main way everyone will communicate with you. 
+* Please introduce yourself in the #networking channel and post your techstack in the #techstack channel
+
+
+3. Watch past cohort demos [MANDATORY]
+* Summary of Cohort 1 and 2 Demo
+https://youtu.be/S69147JbQpU?si=p0fHjqO7tTlyUHTB
+* Example of Cohort 3 Demo (highly recommended)
+https://youtu.be/5OZjUtUdbbI?si=iW_JL81H3fjLl0yn

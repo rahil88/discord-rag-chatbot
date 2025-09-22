@@ -1,35 +1,41 @@
-Source: Intern_FAQ_AI_Bootcamp
-Chunk 5 of 20
-Size: 1471 characters
-Hash: 90785f68a4603f950b07abe67435a74a1e6c4482439582052c7f30ffdaeac48e
+Source: Training_For_AI_Engineer_Interns
+Chunk 7 of 8
+Size: 797 characters
+Hash: 7d0401f518159ee25a940105068ddc3952cc72e07a2a310bb7c95b6d5a08f4c2
 --------------------------------------------------
-________________
+Introduction to Databases
 
 
-Team Size & Composition
-* Typical team size: 8–10 members
-* Larger-scope projects may be assigned bigger teams
-* Teams with multiple PMs and developers tend to launch more ambitious, successful products
-________________
+Database Basic: 
+Microsoft database foundations. 
 
 
-Key Recommendations
-* At least 3 product managers per team to divide user research, roadmap, and GTM work
-* At least 3 developers for faster development and technical redundancy
-* Data scientists and designers are optional based on your product goals
-________________
+SQL Basics and Advanced Queries
+* (58mins) Learn SQL in 1 hour 
+* (docs) SQL reference 
 
 
-📌 The more balanced and collaborative your team, the higher the chance of building a real, launch-ready product. Let us know if you'd like support building your team or scoping your idea!
+Database Design and Normalization
+Basic lesson: 
+* (17mins) Database design tutorial. 
+* (6mins) Database schema
+* (32mins) Logical Database Design and E-R Diagrams
+* (docs) The design process
+* (docs) Applying the normalization rules
 
 
-Cohort Schedule 
-The schedule below is the full bootcamp schedule, All interns can attend the mentor office hours, NOT the group training for PMs.
-Week 1: AI Product Strategy (GUCCI Framework) and AI Basics
-* All - Mon 9/15 at 10:30 AM—12 PM (EST)    Onboarding Orientation - Cohort 6 (All)
-* PM Only: Mon 9/15 at 8 PM—9 PM (EST)    Create Winning AI Product Strategy
-* PM Only: Mon 9/15 at 9 PM—10 PM (EST)    AI 101 and Program Kick Off
-* PM Only: Tues 9/16 at 7:30 PM—10:30 PM (EST) PM: Pitch Day Idea Refinement [Linda Wang]
-* All Engineers: Wed 9/17 9 PM—10 PM (EST)  Tech Ownership - [Mentor: Adam Zhu]
-* All - Sun 9/21 10 AM—11 AM (EST)    Office hours/Q&A sessions to clarify doubts
-Week 2: End-to-End Al Product Management Lifecycle
+Advanced lesson: (optional)
+* (27 hours) Meta Intro to database. 
+
+
+Python Fundamentals
+* (3h55mins) Python for beginners
+
+
+Data Manipulation using Python (Pandas, NumPy)
+* (1h49min) Python Library for Data Science
+
+
+Connecting Python to Databases (SQLAlchemy, psycopg2)
+* (8mins) Python database Connection 
+* (17mins) SQL database with Pandas and Python

@@ -1,48 +1,23 @@
 Source: AI_Bootcamp_Journey_Learning_Path
-Chunk 3 of 8
-Size: 1489 characters
-Hash: 7db2bccc9c6737e8160220daa041b8f8fb3aad615d5b6ba1e095300f75690b53
+Chunk 3 of 12
+Size: 974 characters
+Hash: 09a28dda067d32147f74a3ecb081f261a0e98e5541d95be46eef4d7d19aff49b
 --------------------------------------------------
-* The Illustrated Transformer – Jay Alammar
-         * Andrej Karpathy's Neural Networks Zero to Hero
-         * Neural Networks: Zero to Hero - YouTube
-         * HuggingFace Course
-         * Introduction - Hugging Face NLP Course
+* Engineers join Zoom Pitch Day and fill out Google Ranking form. (Lead Engineers get Ranking choice priority)  
+         * Lead Engineer Responsibilities = 
+         * Lead System Architecture Design (Bring thoughts to Office Hours)
+         * Determine version control process in shared repository (Github) [And Git locally]
+         * Assist other Engineers (not code for them but help with issues/hurdles)
+         * Help PM’s with technical hurdles
 
 
-Gen AI & Data Engineering (4 Days)
-Generative AI for Beginners | Microsoft Learn
-         * Day 1-2: LLM Fundamentals
-         * LLM architectures
-         * Prompt engineering
-         * Context length and limitations
-         * RAG (Retrieval Augmented Generation)
-         * Vector databases
-         * Day 3: Data Engineering
-         * Data preprocessing
-         * Text chunking strategies
-         * Embedding models
-         * Vector similarity search
-         * Data quality and validation
-         * Day 4: Integration
-         * API integration (OpenAI, Anthropic)
-         * Streaming responses
-         * Error handling
-         * Cost optimization
-         * Practical Exercises:
-         * Build a simple chatbot
-         * Implement RAG system
-         * Create custom training dataset
-         * Resources:
-         * LangChain Documentation
-         * Tutorials | 🦜️🔗 LangChain
-         * OpenAI Cookbook
-         * GitHub - openai/openai-cookbook: Examples and guides for using the OpenAI API
-         * Vector Database Fundamentals
-         * What is a Vector Database & How Does it Work? Use Cases + Examples | Pinecone
+         * Week 5: Cross-functional team collaboration. Agile feature development
+         * Week 6: Cross-functional team collaboration. Agile feature development
+         * Week 7 Cross-functional team collaboration. Agile feature development 
+         * Week 8: Cross-functional team collaboration. Agile feature development 
+         * Week 9: Cross-functional team collaboration. Agile feature development
+         * Week 10: Testing and Demo ready
+         * Week 11: Demo!
 
 
-
-
-MLOps & Deployment (3 Days)
-         * Day 1: Development Practices
+Training Documents:

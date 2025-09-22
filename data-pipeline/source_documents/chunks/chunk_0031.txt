@@ -1,38 +1,22 @@
 Source: Intern_FAQ_AI_Bootcamp
-Chunk 17 of 20
-Size: 1481 characters
-Hash: 3fe0de1c66874092641ff63019109e8865638419a827194aae9ae1d48ecab5e3
+Chunk 11 of 30
+Size: 995 characters
+Hash: e43be6d586933b6a8ac911b831fd768927712c15a5a7dae3a8ae07ec82308e7d
 --------------------------------------------------
-* Cohort #5 = Jun-23-2025  - Sep-12-2025
+Week 8: Advanced Prompt Engineering
+* PM Only: Tues 11/4 8 PM—10 PM (EST)    No-code Tools Session  [Mentor: Adam Zhu]
+* All - Sun 11/9 10 AM—11 AM (EST)    Office hours/Q&A sessions to clarify doubts
+Week 9: Prototyping & Building with No-Code Tools
+* PM Only: Mon 11/10 8:00 PM—10:00 PM (EST)    AI Product Portfolio Development
+* All - Sun 11/16 10:00 AM—11:00 AM (EST)    Office hours/Q&A sessions to clarify doubts
+
+
+Week 10: Al PM Resume
+* PM Only: On-Demand Schedule your 1:1 resume review with our Executive Resume Coach
+* All: Sun 11/23 10:00 AM—11:00 AM (EST)    Office hours/Q&A sessions to clarify doubts
+Week 11: Al PM Interview and Product Demo
+*  PM Only: Mon 11/24 10:00 AM—12:00 PM (EST)    AI PM Interview
+* All - Tues 11/25 8:30 PM—10:30 PM (EST)   Group Project Demo: Showcase your product with a demo. Get feedback from AI advisors
+Current and upcoming cohort duration 
 * Cohort #6 = Sept-15-2025  - Nov-28-2025
 * Cohort #7 = Jan-19-2026  - Mar-30-2026 weeks
-* Cohort #8 = Aprl-06-2026  - Jun-19-2026 weeks
-But my OPT/CPT will only allow me to have Start Date = June 23rd and End Date = August 8th. 
-
-
-Reason: The university has informed me that they cannot approve the current dates listed in the offer letter, as the internship must conclude before the start of the Fall 2025 semester. According to their guidelines, the final allowable date for the internship is August 8, 2025..        
-
-
-Can I still join a cohort, but not tell my university?  - Can I get in trouble for this situation? 
-
-
-Answer: If your CPT/OPT date is within 1 week or so around our cohort date. It’s fine. If it cuts off in the middle of the cohort. We have to move you to the future cohort. 
-
-
-2. Who will pay for services that require pay during the internship? 
-   1. Example - API services or Cloud services for the AI product? 
-   2. Example - Need compute for FineTuning a model? 
-
-
-Answer: Our company or the product managers in the same team will cover the cloud and API cost. But we will not cover the computer device cost. 
-
-
-3. I will be traveling to visit my family from the USA to India, China, etc…. Can I use this OPT/CPT work permit for reentry into the USA? 
-
-
-Answer: We don’t know, please contact your immigration lawyer. 
-
-
-
-
-4. Standard response for CPT/OPT process in the program:

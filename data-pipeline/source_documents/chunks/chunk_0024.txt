@@ -1,59 +1,14 @@
 Source: Intern_FAQ_AI_Bootcamp
-Chunk 10 of 20
-Size: 1478 characters
-Hash: c24d5f797a883547e1042ddd2221664a4134cc71fdc4fe8c74a0fbe51bfea6c6
+Chunk 4 of 30
+Size: 838 characters
+Hash: fd56888234d6fb0b241f57f45612e87abc994d58b0f012221cf3c0dc5f0dacdd
 --------------------------------------------------
-🌟 Invitation to be an AI mentor for future interns
-🌟 Priority access to join the future bootcamp cohorts
-🌟 Free resume review with our Sr. recruiter with 20+ years of recruiting experiences
+Engineers:Continue working on the project you have chosen (more details will be provided in discord) 
+* Join the discord channel to discuss the assignment you chose
+* Make sure to attend Office Hours to speak with mentors to discuss your progress. 
+        Designers: Make sure to join Pitch Day (check your calendar for invitations). This is where you will hear about the Product Mangers idea and join a team by filling out a Team Match spreadsheet. (more details about the spreadsheet will be discussed on this date)
 
 
-🥈 Tier 2: AI Innovator
-Built solutions. Powered progress.
-
-
-Criteria:
-✅ Completed majority of project work assigned by the team lead
-✅ Attended 75%+ team meetings or communicated with team members within 3 days
-✅ Contributed consistently to tasks and team discussions
-✅ Demonstrated strong engineering fundamentals
-
-
-
-
-🎖 Recognition:
-🏅 LinkedIn badge
- 🏅Team recognition post on LinkedIn
-🏅 AI Engineer/ AI Designer Certification 
-🏅 Access to free job referrals to tech companies
-🏅 Letter of recommendation from team lead
-🏅 LinkedIn endorsement from the team lead
-🏅 Priority access to  future bootcamp cohorts
-
-
-🥉 Tier 3: AI Rising Star
-Took initiative. Gained real-world experience.
-
-
-Criteria:
-✅ Participated in the entire project without quitting
-✅ Making efforts to communicate with the team lead and team members
-✅ Showed enthusiasm to grow and learn
-
-
-🎖 Recognition:
-📜 AI Engineer/ AI Designer Certification 
-📣 Group social media mention
-🚀  Letter of recommendation from team lead
-
-
-
-
-**Team Lead,** please send the developer names and awards to my team in the private group chat. 
-
-
-Thank you for all our interns' great efforts! 
-
-
-PS: If you have other recommendations on the award systems, please let me know.
-________________
+Week 3: Continue making progress
+* Engineers:  Finish up your assignment and share your progress. We will discuss more on how to share as we get closer to week 3
+* Designers: Work on Interviewing Customers to see if AI ideas can be validated & start creating High-Fidelity designers for next week’s Pitch Day.

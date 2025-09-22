@@ -1,15 +1,32 @@
 Source: Intern_FAQ_AI_Bootcamp
-Chunk 12 of 20
-Size: 1277 characters
-Hash: b776907b24240b5609aa53009d677870f5b19fe807aef5e1462d690670799dd6
+Chunk 6 of 30
+Size: 977 characters
+Hash: c063a694c4e43ed14e34a6771df0bb34f541d0538ad4bc4449778b5a40cb0320
 --------------------------------------------------
-* The teams consist of software developers, data scientists, and product managers. The internship includes working on tasks like voice of customer interviews, MVP development, and go-to-market strategies.
-3. Application and Selection Process:
-   * Over 2,000 applications were received. Applicants will undergo a technical assessment involving a coding task, which is crucial for selection.
-   * The focus is on finding candidates with strong software engineering skills, AI knowledge, and the ability to work as team players. Dr. Nancy Li emphasizes the importance of commitment and dedication.
-4. Timeline and Commitment:
-   * The internship runs for 3 months, with a minimum commitment of 10 hours per week. Successful completion of the project may lead to further opportunities.
-5. Resources and Learning:
-   * Participants will have access to technical advisors and recommended courses to improve their AI skills. Dr. Nancy Li encourages continuous learning and upskilling in areas like AI and cloud computing. Here is the training doc for all interns.
-6. Evaluation and Outcome:
-   * The technical assessment will determine who gets selected. The evaluation includes both the coding quality and the candidate’s ability to collaborate effectively within the team.
+Week 9-10: Start testing the various functionalities. Designers would be very helpful here since they know the user's mindset the best. 
+
+
+Note: The Product Manager will create the main GitHub repository. The Lead Engineer on each team should help others who are not familiar with GitHub as well as help with System Design. When you have questions please reach out to the mentors during Office Hours.  
+
+
+
+
+________________
+
+
+—-----------------------------------------------------------------------------------------------------------------
+
+
+AI PM Bootcamp FAQ
+
+
+________________
+
+
+
+
+🧑‍💻 Team Structure Overview 
+Each team is formed from participants in the PM Accelerator Program, and typically includes:
+* Product Managers – Responsible for business case development, voice of customer interviews, and market research
+* Developers – Execute the technical build
+* (Optional) Data Scientists & Designers – Added as needed, based on project complexity

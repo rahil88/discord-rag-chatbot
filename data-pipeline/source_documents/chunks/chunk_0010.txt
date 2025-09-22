@@ -1,32 +1,35 @@
-Source: Training_For_AI_Engineer_Interns
-Chunk 2 of 6
-Size: 1487 characters
-Hash: da45c99ec8dafa677e8855ec10fcc31055677a2f10d40a58e41447c598d4b01a
+Source: AI_Bootcamp_Journey_Learning_Path
+Chunk 10 of 12
+Size: 988 characters
+Hash: 54ea0c8549e33a8012212f7741f27d89c87bbd4f623f23a59ed400a4f83451c7
 --------------------------------------------------
-* Conversational Agents: Group of AI agents able to assume roles and plan/discuss/validate answer before providing them.
-      * Here is a lecture from Andrew Ng demonstrating the Agentic Workflows and why they are game-changer
-* FastAPI = Web framework for building APIs with Python based on standard Python type hints.
-* Docker for DataScientists 
+* Final presentation
 
 
+Onboarding Video Link By Anil Thomas: https://youtu.be/ZBEoZYmMCMc [Cohort 5]
 
 
-Advanced AI Concepts
+Success Metrics:
+         1. Functional prototype
+         2. Clean, documented code
+         3. Comprehensive testing
+         4. Clear documentation
+         5. Effective presentation
+         6. Team collaboration
 
 
-Machine Learning Master = Great source for complex concepts
-   * Overfitting and underfitting 
-      * Underfitting & Overfitting - Explained
-      * Machine Learning Fundamentals: Bias and Variance
-   * MLOps What is MLOps?
-   * MLOPS ZoomCamp : 9-Week Course on Productionizing ML Services
-   * Feature Engineering What is Feature Engineering?
-   * Hyperparameter Tunning Parameters vs hyperparameters in machine learning
-   * Model Deployment Machine Learning Model Deployment Explained | All About ML Model Deployment
-   * Framing the AI task
-      * Data cleaning in production time https://youtu.be/P8ERBy91Y90?si=yZ37-ScTbjtK4Af
-      * Sampling Frequency
-      * Supervised: Classification, Prediction, Regression, Recommendation, Named Entity Recognition (NER), Speech Recognition, Object Detection, Segmentation
-         * Image classification vs Object detection vs Image Segmentation | Deep Learning Tutorial 28
-         * Natural Language Processing In 5 Minutes | What Is NLP And How Does It Work? | Simplilearn
-      * Unsupervised: Clustering, Dimensionality Reduction
+Tools & Technologies
+[05. Tools & Technologies.docx]
+Mentor Kat Sao’s Schedule & Recordings (Cohort 3) 
+
+
+Week 1: Friday, January 31 @11am - Duration: 1hr
+   Session Theme: Introduction, What to expect, Timelines, Q&A https://youtu.be/_v6hyhS_U0U
+
+Week 2: Friday, February 7 @ 11am - Duration : 30 mins Session Theme: Q&A: General - (Session Canceled, No attendees)
+
+
+Week 3: Friday, February 14 @ 11am - Duration 1hr Session Theme: Prepping for Team Matching & I’m on a team, now what?  https://youtu.be/d7bCIwlXZsY
+
+
+Week 4: Friday, February 21 @ 10am - Duration 30 mins Session Theme: AI Product Lifecycle https://youtu.be/sc8g3RvwBBk

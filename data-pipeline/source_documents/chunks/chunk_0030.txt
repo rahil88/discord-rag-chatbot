@@ -1,28 +1,18 @@
 Source: Intern_FAQ_AI_Bootcamp
-Chunk 16 of 20
-Size: 1317 characters
-Hash: 6c4bd0c8b98ae7101280bcefd551c7a78a16bb647eb574f2d8190d416f25829f
+Chunk 10 of 30
+Size: 929 characters
+Hash: 933d7979cdeeffa62f60efa5e42fd8e0d6386f5807d1953d8fda8f75a186f9ef
 --------------------------------------------------
-* A: You can list the internship experience on LinkedIn after successfully completing the project.
-15. Q: What is the team size for the projects?
-   * A: Teams typically consist of 8 to 10 people, including product managers and engineers, depending on the scope of the project.
-16. Q: What happens after the internship in terms of job opportunities?
-   * A: The company will share your project work through social channels and pass job descriptions to the Discord channel. This may lead to job opportunities through referrals. The top performers receiving our awards will get additional benefit such as job referrals and 1:1 resume review. Please student the Award sessions for details. 
-
-
-
-
-________________
-
-
-—------------------------------------------------------------------------------------------------------------------
-Additional Intern Questions:
-
-
-1. What happens in situations when my OPT/CPT dates are 1-month into the program and ends before the next cohort? 
-        Example: I’m interested in joining Cohort 5:
-* Cohort #5 = Jun-23-2025  - Sep-12-2025
-* Cohort #6 = Sept-15-2025  - Nov-28-2025
-* Cohort #7 = Jan-19-2026  - Mar-30-2026 weeks
-* Cohort #8 = Aprl-06-2026  - Jun-19-2026 weeks
-But my OPT/CPT will only allow me to have Start Date = June 23rd and End Date = August 8th.
+* All - Sun 10/12 10:00 AM—11:00 AM (EST)    Office hours/Q&A sessions to clarify doubts
+Week 5: AI UI/UX Design and AI Architecture
+* PM Only: Mon 10/13 8:00 PM—9:00 PM (EST)    AI UI/UX Design
+* PM Only: Tues 10/14 9:00 PM—10:00 PM (EST)    AI Architecture [Mentor: Adam Zhu]
+*  All - Sun 10/19 10:00 AM—11:00 AM (EST)    Office hours/Q&A sessions to clarify doubts
+Week 6: GTM - Drive users and engagement of your Al Project
+* PM Only: Mon 10/20 8:00 PM—10:00 PM (EST)    Go-to-market Strategy Session
+* All - Sun 10/26 10:00 AM—11:00 AM (EST)    Office hours/Q&A sessions to clarify doubts
+Week 7: Advanced Prompt Engineering
+* PM Only: Tues 10/28 8PM—10 PM (EST)    Prompt Engineering Session [Mentor: Adam Zhu]
+* All - Sun 11/2 10 AM—11 AM (EST)    Office hours/Q&A sessions to clarify doubts
+Week 8: Advanced Prompt Engineering
+* PM Only: Tues 11/4 8 PM—10 PM (EST)    No-code Tools Session  [Mentor: Adam Zhu]

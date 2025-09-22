@@ -1,53 +1,40 @@
 Source: AI_Bootcamp_Journey_Learning_Path
-Chunk 6 of 8
-Size: 1480 characters
-Hash: 8639372119b30d664ceadd3859713c4740981aa7d9b8dafc0e246d9707e1c32b
+Chunk 6 of 12
+Size: 981 characters
+Hash: 1525c1858bec8f42756e756bd1c74712a4b8e8fdd18474f89ac2f2951b7940bc
 --------------------------------------------------
-*   Full Stack Engineer
-         * Front end Engineer
-         * Back end Engineer
-         * Fullstack Engineer
-         *   Data Scientist
-         *   Data Engineer
-         *   UX Designer
-         *   Product Manager
-         * Weekly Schedule: (team consensus)
-         * Monday: Sprint planning/review
-         * Daily: Standups
-         * Wednesday: Technical discussion
-         * Friday: Demo/documentation
-         * Real-world Applications (Ongoing)
-         * Project Requirements:
-         * Business value proposition
-         * Scalability considerations
-         * Cost optimization
-         * Security compliance
-         * User experience
-         * Deliverables: (team consensus)
-         * Working prototype
-         * Technical documentation
-         * API documentation
-         * Deployment pipeline
-         * Monitoring dashboard
-         * Final presentation
+* Vector Database Fundamentals
+         * What is a Vector Database & How Does it Work? Use Cases + Examples | Pinecone
 
 
-Onboarding Video Link By Anil Thomas: https://youtu.be/ZBEoZYmMCMc [Cohort 5]
 
 
-Success Metrics:
-         1. Functional prototype
-         2. Clean, documented code
-         3. Comprehensive testing
-         4. Clear documentation
-         5. Effective presentation
-         6. Team collaboration
+MLOps & Deployment (3 Days)
+         * Day 1: Development Practices
+         * Git workflow
+         * Code review process
+         * Documentation standards
+         * Testing strategies
+         * Day 2: Deployment
+         * Docker containerization
+         * CI/CD pipelines
+         * Model serving
+         * API development (FastAPI)
+         * Day 3: Monitoring
+         * Logging best practices
+         * Performance monitoring
+         * Cost tracking
+         * Error handling
+         * Resources:
+         * MLOps Zoomcamp
+         * GitHub - DataTalksClub/mlops-zoomcamp: Free MLOps course from DataTalks.Club
+         * FastAPI Documentation
+         * FastAPI
+         * Docker for ML
+         * Docker For Data Scientists
 
 
-Tools & Technologies
-[05. Tools & Technologies.docx]
-Mentor Kat Sao’s Schedule & Recordings (Cohort 3) 
 
 
-Week 1: Friday, January 31 @11am - Duration: 1hr
-   Session Theme: Introduction, What to expect, Timelines, Q&A https://youtu.be/_v6hyhS_U0U
+Project-Based Learning (Weeks 3-11)
+         * Agile Scrum Methodology (Week 3)

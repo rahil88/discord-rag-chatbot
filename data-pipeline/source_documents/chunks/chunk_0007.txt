@@ -1,35 +1,29 @@
 Source: AI_Bootcamp_Journey_Learning_Path
-Chunk 7 of 8
-Size: 1172 characters
-Hash: f9374009c640acb03cad3215ad1c85a6f88993ef84a9150c740ad0dc016d87fb
+Chunk 7 of 12
+Size: 974 characters
+Hash: d23e38cb4fa37b612470f4fed2fedbf3b165fd537567a00f1747faffd8ba18bb
 --------------------------------------------------
-6. Team collaboration
+* FastAPI
+         * Docker for ML
+         * Docker For Data Scientists
 
 
-Tools & Technologies
-[05. Tools & Technologies.docx]
-Mentor Kat Sao’s Schedule & Recordings (Cohort 3) 
 
 
-Week 1: Friday, January 31 @11am - Duration: 1hr
-   Session Theme: Introduction, What to expect, Timelines, Q&A https://youtu.be/_v6hyhS_U0U
-
-Week 2: Friday, February 7 @ 11am - Duration : 30 mins Session Theme: Q&A: General - (Session Canceled, No attendees)
-
-
-Week 3: Friday, February 14 @ 11am - Duration 1hr Session Theme: Prepping for Team Matching & I’m on a team, now what?  https://youtu.be/d7bCIwlXZsY
-
-
-Week 4: Friday, February 21 @ 10am - Duration 30 mins Session Theme: AI Product Lifecycle https://youtu.be/sc8g3RvwBBk
-
-
-Week 5: Friday, February 28 @ 11am - Duration 30 mins Session Theme: Outcome Mindset & Delivering Value  https://youtu.be/ADjjqyM1zP4
-
-
-Week 6: Friday, March 7 @ 11am - Duration 30 mins Session Theme: Q&A: Retrospective, how’s it going? (no recording) No Recording
-
-
-Week 7: Friday, March 14 @ 11am - Duration 1hr Session Theme: Q&A and Retrospective -  No recording 
-
-
-Week 10: Friday, April 4 @ 11am - Duration 1hr Final Session Theme: Demo Practice & Retrospective  - CANCELED
+Project-Based Learning (Weeks 3-11)
+         * Agile Scrum Methodology (Week 3)
+                        Please set aside 1 hour for Agile (Week 1&2)
+Understanding Agile Scrum.pdf
+What Is Agile Methodology? | Introduction to Agile Methodology in Six Minutes | Simplilearn
+What Is Agile Scrum Framework? | Scrum Framework Explained | Agile Methodology | Simplilearn
+Master the Daily Scrum: Everything You Need to Know for Agile Success! 🚀 | Scrum Basics Simplified
+What are the tools and techniques for documenting and tracking scope and change in agile?
+         * Sprint Structure: (team consensus)
+         * 1-2 week sprints
+         * Daily standups (15 mins)
+         * Sprint planning (1 hour)
+         * Sprint review (20 mins)
+         * Retrospective (20 mins)
+         * Documentation Requirements: (team consensus)
+         * Sprint backlog
+         * User stories

@@ -1,18 +1,17 @@
 Source: Intern_FAQ_AI_Bootcamp
-Chunk 14 of 20
-Size: 1321 characters
-Hash: f232c99e452dac5edc9e763db4ead32c5d61b47b8aa27afd5efb5e70595c6ffc
+Chunk 8 of 30
+Size: 914 characters
+Hash: f7769c82482bd242161cc1b181018411db9cb73856162c5ccfae7c2839ea800d
 --------------------------------------------------
-4. Q: Can we use any programming language or technology stack for the project?
-   * A: There is no preference for a specific technology stack. However, most AI work typically uses Python.
-5. Q: What happens if the code is submitted privately on GitHub?
-   * A: If the code is private, it may not be adequately evaluated by the assessment tool. Public repositories are preferred for proper evaluation.
-6. Q: Can I use APIs for the AI project?
-   * A: Yes, you are encouraged to use APIs and any other necessary tools to complete your project.
-7. Q: What type of projects are being developed?
-   * A: Examples include AI-powered home renovation, inventory forecasting, price prediction, mental health consultation, and productivity tools. The projects vary depending on the cohort and team needs. Please watch the last cohort demo for project inspiration.
-8. Q: Is there a preference for the weather app’s lines of code?
-   * A: For public submissions, focus on building the app without worrying about the number of lines of code. For private submissions, ensure there are enough lines of code to be evaluated properly.
-9. Q: What is the evaluation process for the technical assessment?
-   * A: Our tech recruiter will review your tech assessment one by one.
-10. Q: Will there be any technical courses provided?
+Cohort Schedule 
+The schedule below is the full bootcamp schedule, All interns can attend the mentor office hours, NOT the group training for PMs.
+Week 1: AI Product Strategy (GUCCI Framework) and AI Basics
+* All - Mon 9/15 at 10:30 AM—12 PM (EST)    Onboarding Orientation - Cohort 6 (All)
+* PM Only: Mon 9/15 at 8 PM—9 PM (EST)    Create Winning AI Product Strategy
+* PM Only: Mon 9/15 at 9 PM—10 PM (EST)    AI 101 and Program Kick Off
+* PM Only: Tues 9/16 at 7:30 PM—10:30 PM (EST) PM: Pitch Day Idea Refinement [Linda Wang]
+* All Engineers: Wed 9/17 9 PM—10 PM (EST)  Tech Ownership - [Mentor: Adam Zhu]
+* All - Sun 9/21 10 AM—11 AM (EST)    Office hours/Q&A sessions to clarify doubts
+Week 2: End-to-End Al Product Management Lifecycle
+* PM Only: Mon 9/22 8 PM—10 PM (EST)    AI PM Life Cycle Session
+* PM & Designers : Tue 9/23 10 —12 PM (EST)  Group Project Kickoff: Pitch ideas, & assemble team

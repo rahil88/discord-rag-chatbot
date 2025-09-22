@@ -1,71 +1,18 @@
 Source: Training_For_AI_Engineer_Interns
-Chunk 4 of 6
-Size: 1461 characters
-Hash: 101c31ea79c1dc1f9a80974e85fd559a53779c45116b4eddc83f1e8941a38185
+Chunk 0 of 8
+Size: 969 characters
+Hash: 0ecab40e38fc70b9e2e70facc2b8aaf14588e51e613f0b9a2d9252e2dd7d6a7c
 --------------------------------------------------
-* LangChain - Reflection Agents example
-      * Tool Use
-         * LangChain - Tool Calling        
-      * Planning
-         * LangGraph - Planning Agents
-      * Multi-agent Collaboration
-         * LangGraph: Multi-Agent Workflows
+﻿Key Technical Knowledge For AI Engineers 
 
 
-      * Agent Evaluations
-         * LangGraph: Agent Evaluations
-         * LangSmith Without LangChain/Graph (Observability, Evals)
-
-
-      * Designing with Agents in Mind (Important for Frontend developers)
-         * The Agentic Era of UX
-         * LangChain: Breakout Agentic Apps
-         * LangChain: UX for Agents, Part 1: Chat
-         * LangChain: UX for Agents, Part 2: Ambient
-         * LangChain: UX for Agents, Part 3: Spreadsheets, Generative, and Collaborative UI/UX
-
-
-
-
-
-
-Examples of Developing AI Products
-
-
-
-
-Create ChatGPT Application with Chat GPT API from OpenAI in Python Flask
-
-
-Build AI Apps with ChatGPT and DALL-E
-
-
-Developer channel
-
-
-Introduction to Databases
-
-
-Database Basic: 
-Microsoft database foundations. 
-
-
-SQL Basics and Advanced Queries
-* (58mins) Learn SQL in 1 hour 
-* (docs) SQL reference 
-
-
-Database Design and Normalization
-Basic lesson: 
-* (17mins) Database design tutorial. 
-* (6mins) Database schema
-* (32mins) Logical Database Design and E-R Diagrams
-* (docs) The design process
-* (docs) Applying the normalization rules
-
-
-Advanced lesson: (optional)
-* (27 hours) Meta Intro to database. 
-
-
-Python Fundamentals
+Basic AI Concepts
+   * Machine Learning: Systems learning patterns from data to improve performance.
+      * High-level intro, types of ML, 
+   * Deep Learning: Utilizing neural networks with many layers to model complex patterns.
+      * What is deep learning
+      * Math behind deep learning
+   * Natural Language Processing (NLP): A class of AIs aimed at processing and understanding human language.
+      * Transformers Architecture: A specific way to architect AI language models that radically improved quality, by unlocking the AI ability to focus on the right words in the sentences. This concept was first introduced by Google’s article ‘Attention is All you need’.
+         * Transformers, explained
+         * Complicated math behind it if you want to get technical. But it might hurt your brain after watching it. A lot of math…Transformer Neural Networks, ChatGPT's foundation, Clearly Explained!!!

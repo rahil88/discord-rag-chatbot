@@ -35,6 +35,10 @@ from bs4 import BeautifulSoup
 from sentence_transformers import SentenceTransformer
 import numpy as np
 
+# MongoDB imports
+from pymongo import MongoClient
+from pymongo.errors import ConnectionFailure, ServerSelectionTimeoutError
+
 # LangChain imports for document processing
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.schema import Document
@@ -327,6 +331,157 @@ class EmbeddingService:
         test_embedding = self.generate_embedding("test")
         return len(test_embedding)
 
+class MongoDBService:
+    """Service for connecting to and managing MongoDB Atlas operations."""
+    
+    def __init__(self, connection_string: str, database_name: str = "discord_rag", collection_name: str = "document_chunks"):
+        """Initialize MongoDB service with connection string and database configuration."""
+        self.connection_string = connection_string
+        self.database_name = database_name
+        self.collection_name = collection_name
+        self.client = None
+        self.database = None
+        self.collection = None
+        self._connect()
+    
+    def _connect(self) -> None:
+        """Establish connection to MongoDB Atlas with error handling."""
+        try:
+            logger.info(f"Connecting to MongoDB Atlas...")
+            self.client = MongoClient(
+                self.connection_string,
+                serverSelectionTimeoutMS=10000,  # 10 second timeout
+                connectTimeoutMS=10000,
+                socketTimeoutMS=10000
+            )
+            
+            # Test the connection
+            self.client.admin.command('ping')
+            logger.info("Successfully connected to MongoDB Atlas")
+            
+            # Initialize database and collection
+            self.database = self.client[self.database_name]
+            self.collection = self.database[self.collection_name]
+            
+            # Create indexes for better performance
+            self._create_indexes()
+            
+        except ConnectionFailure as e:
+            logger.error(f"Failed to connect to MongoDB Atlas: {e}")
+            raise DocumentIngestionError(f"MongoDB connection failed: {e}")
+        except ServerSelectionTimeoutError as e:
+            logger.error(f"MongoDB server selection timeout: {e}")
+            raise DocumentIngestionError(f"MongoDB server timeout: {e}")
+        except Exception as e:
+            logger.error(f"Unexpected MongoDB connection error: {e}")
+            raise DocumentIngestionError(f"MongoDB connection error: {e}")
+    
+    def _create_indexes(self) -> None:
+        """Create indexes for better query performance."""
+        try:
+            # Create index on document_title for faster filtering
+            self.collection.create_index("document_title")
+            
+            # Create index on chunk_id for faster lookups
+            self.collection.create_index("chunk_id")
+            
+            # Create text index for content search
+            self.collection.create_index([("content", "text")])
+            
+            # Create index on embedding for vector similarity search (if using Atlas Search)
+            # Note: Vector search requires Atlas Search configuration
+            logger.info("MongoDB indexes created successfully")
+            
+        except Exception as e:
+            logger.warning(f"Failed to create some indexes: {e}")
+    
+    def insert_chunks(self, chunks: List[Document]) -> int:
+        """Insert document chunks into MongoDB collection."""
+        if self.collection is None:
+            raise DocumentIngestionError("MongoDB collection not initialized")
+        
+        try:
+            # Prepare documents for insertion
+            documents = []
+            for chunk in chunks:
+                doc = {
+                    'content': chunk.page_content,
+                    'metadata': chunk.metadata,
+                    'document_title': chunk.metadata.get('title', 'Unknown'),
+                    'chunk_id': chunk.metadata.get('chunk_id', 0),
+                    'total_chunks': chunk.metadata.get('total_chunks', 0),
+                    'chunk_size': chunk.metadata.get('chunk_size', 0),
+                    'chunk_hash': chunk.metadata.get('chunk_hash', ''),
+                    'embedding': chunk.metadata.get('embedding'),
+                    'created_at': chunk.metadata.get('created_at', time.strftime('%Y-%m-%d %H:%M:%S')),
+                    'source_url': chunk.metadata.get('source', ''),
+                    'language': chunk.metadata.get('language', 'en'),
+                    'chunk_type': chunk.metadata.get('chunk_type', 'text')
+                }
+                documents.append(doc)
+            
+            # Insert documents in batch
+            if documents:
+                result = self.collection.insert_many(documents)
+                logger.info(f"Successfully inserted {len(result.inserted_ids)} chunks into MongoDB")
+                return len(result.inserted_ids)
+            else:
+                logger.warning("No documents to insert")
+                return 0
+                
+        except Exception as e:
+            logger.error(f"Failed to insert chunks into MongoDB: {e}")
+            raise DocumentIngestionError(f"MongoDB insertion failed: {e}")
+    
+    def clear_collection(self) -> int:
+        """Clear all documents from the collection."""
+        if self.collection is None:
+            raise DocumentIngestionError("MongoDB collection not initialized")
+        
+        try:
+            result = self.collection.delete_many({})
+            logger.info(f"Cleared {result.deleted_count} documents from MongoDB collection")
+            return result.deleted_count
+        except Exception as e:
+            logger.error(f"Failed to clear MongoDB collection: {e}")
+            raise DocumentIngestionError(f"MongoDB clear operation failed: {e}")
+    
+    def get_collection_stats(self) -> Dict[str, Any]:
+        """Get statistics about the collection."""
+        if self.collection is None:
+            raise DocumentIngestionError("MongoDB collection not initialized")
+        
+        try:
+            total_docs = self.collection.count_documents({})
+            docs_with_embeddings = self.collection.count_documents({"embedding": {"$ne": None}})
+            
+            # Get unique document titles
+            unique_titles = self.collection.distinct("document_title")
+            
+            return {
+                'total_documents': total_docs,
+                'documents_with_embeddings': docs_with_embeddings,
+                'unique_document_titles': len(unique_titles),
+                'document_titles': unique_titles
+            }
+        except Exception as e:
+            logger.error(f"Failed to get collection stats: {e}")
+            return {}
+    
+    def close_connection(self) -> None:
+        """Close MongoDB connection."""
+        if self.client:
+            self.client.close()
+            logger.info("MongoDB connection closed")
+    
+    def __enter__(self):
+        """Context manager entry."""
+        return self
+    
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        """Context manager exit."""
+        self.close_connection()
+
 # =============================================================================
 # CONCRETE IMPLEMENTATIONS
 # =============================================================================
@@ -584,9 +739,10 @@ class LangChainDocumentChunker(DocumentChunker):
 class DocumentIngestionPipeline:
     """Enterprise-grade document ingestion pipeline with comprehensive error handling and embeddings."""
     
-    def __init__(self, config: Optional[ProcessingConfig] = None, enable_embeddings: bool = True):
+    def __init__(self, config: Optional[ProcessingConfig] = None, enable_embeddings: bool = True, enable_mongodb: bool = True):
         self.config = config or ProcessingConfig()
         self.enable_embeddings = enable_embeddings
+        self.enable_mongodb = enable_mongodb
         self._validate_config()
         
         # Setup output directory with proper permissions
@@ -603,6 +759,30 @@ class DocumentIngestionPipeline:
                 logger.warning(f"Failed to initialize embedding service: {e}")
                 logger.warning("Continuing without embeddings...")
                 self.embedding_service = None
+        
+        # Initialize MongoDB service if enabled
+        self.mongodb_service = None
+        if self.enable_mongodb:
+            try:
+                mongodb_connection_string = os.getenv('MONGODB_CONNECTION_STRING')
+                mongodb_database = os.getenv('MONGODB_DATABASE', 'discord_rag')
+                mongodb_collection = os.getenv('MONGODB_COLLECTION', 'document_chunks')
+                
+                if mongodb_connection_string:
+                    self.mongodb_service = MongoDBService(
+                        connection_string=mongodb_connection_string,
+                        database_name=mongodb_database,
+                        collection_name=mongodb_collection
+                    )
+                    logger.info("MongoDB service initialized successfully")
+                else:
+                    logger.warning("MONGODB_CONNECTION_STRING not found in environment variables")
+                    logger.warning("Continuing without MongoDB...")
+                    self.mongodb_service = None
+            except Exception as e:
+                logger.warning(f"Failed to initialize MongoDB service: {e}")
+                logger.warning("Continuing without MongoDB...")
+                self.mongodb_service = None
         
         # Initialize components
         self.downloader = GoogleDocsDownloader(self.config)
@@ -677,6 +857,21 @@ class DocumentIngestionPipeline:
         # Save all chunks and generate reports
         self._save_chunks(all_chunks)
         self._generate_processing_report(processing_results)
+        
+        # Insert chunks into MongoDB if enabled
+        if self.mongodb_service and all_chunks:
+            try:
+                logger.info("Inserting chunks into MongoDB...")
+                inserted_count = self.mongodb_service.insert_chunks(all_chunks)
+                logger.info(f"Successfully inserted {inserted_count} chunks into MongoDB")
+                
+                # Get and log MongoDB collection stats
+                stats = self.mongodb_service.get_collection_stats()
+                logger.info(f"MongoDB Collection Stats: {stats}")
+                
+            except Exception as e:
+                logger.error(f"Failed to insert chunks into MongoDB: {e}")
+                # Don't fail the entire pipeline if MongoDB insertion fails
         
         # Update final statistics
         self.stats['processing_time'] = time.time() - start_time
@@ -953,6 +1148,23 @@ class DocumentIngestionPipeline:
         
         logger.info("Output validation successful")
         return True
+    
+    def cleanup(self) -> None:
+        """Clean up resources and close connections."""
+        if self.mongodb_service:
+            try:
+                self.mongodb_service.close_connection()
+                logger.info("MongoDB connection closed")
+            except Exception as e:
+                logger.warning(f"Error closing MongoDB connection: {e}")
+    
+    def __enter__(self):
+        """Context manager entry."""
+        return self
+    
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        """Context manager exit."""
+        self.cleanup()
 
 # =============================================================================
 # TESTING AND VALIDATION
@@ -1041,19 +1253,20 @@ def main():
         
         # Enable embeddings by default, can be disabled via environment variable
         enable_embeddings = os.getenv('ENABLE_EMBEDDINGS', 'true').lower() == 'true'
+        enable_mongodb = os.getenv('ENABLE_MONGODB', 'true').lower() == 'true'
         
-        pipeline = DocumentIngestionPipeline(config, enable_embeddings=enable_embeddings)
-        
-        # Process documents
-        results = pipeline.process_documents()
-        
-        # Validate output
-        if not pipeline.validate_output():
-            logger.error("Output validation failed")
-            return 1
-        
-        # Display results
-        _display_results(results, pipeline.output_dir)
+        # Use context manager for proper resource cleanup
+        with DocumentIngestionPipeline(config, enable_embeddings=enable_embeddings, enable_mongodb=enable_mongodb) as pipeline:
+            # Process documents
+            results = pipeline.process_documents()
+            
+            # Validate output
+            if not pipeline.validate_output():
+                logger.error("Output validation failed")
+                return 1
+            
+            # Display results
+            _display_results(results, pipeline.output_dir)
         
         logger.info("Document ingestion pipeline completed successfully!")
         return 0
@@ -1069,43 +1282,13 @@ def main():
         return 1
 
 def _display_results(results: Dict[str, Any], output_dir: Path) -> None:
-    """Display comprehensive results summary."""
+    """Display essential results summary."""
     stats = results['stats']
     
-    print("\n" + "="*80)
-    print("🚀 ENTERPRISE DOCUMENT INGESTION PIPELINE - COMPLETED!")
-    print("="*80)
-    
-    print(f"📊 Processing Statistics:")
-    print(f"   • Total Documents: {stats['total_documents']}")
-    print(f"   • Successfully Processed: {stats['processed_documents']}")
-    print(f"   • Failed Documents: {stats['failed_documents']}")
-    print(f"   • Total Chunks Generated: {stats['total_chunks']}")
-    print(f"   • Processing Time: {stats['processing_time']:.2f} seconds")
-    
-    print(f"\n📁 Output Directory: {output_dir}")
-    print(f"📄 Generated Files:")
-    print(f"   • Individual document files (.txt)")
-    print(f"   • Document metadata files (_metadata.json)")
-    print(f"   • Combined chunks file (all_chunks.json)")
-    print(f"   • Embeddings file (embeddings.json)")
-    print(f"   • Chunk index file (chunk_index.json)")
-    print(f"   • Processing report (processing_report.json)")
-    print(f"   • Individual chunk files (chunks/ directory)")
-    
-    print(f"\n🔧 Configuration Used:")
-    print(f"   • Chunk Size: {results.get('config', {}).get('chunk_size', 'N/A')} characters")
-    print(f"   • Chunk Overlap: {results.get('config', {}).get('chunk_overlap', 'N/A')} characters")
-    print(f"   • Checksums Enabled: {results.get('config', {}).get('enable_checksums', 'N/A')}")
-    print(f"   • Embeddings Enabled: {results.get('config', {}).get('enable_embeddings', 'N/A')}")
-    
-    print(f"\n🎯 Next Steps:")
-    print(f"   1. Review the processing report: {output_dir}/processing_report.json")
-    print(f"   2. Validate chunk quality in: {output_dir}/chunks/")
-    print(f"   3. Load chunks for RAG: {output_dir}/all_chunks.json")
-    print(f"   4. Integrate with your Discord bot RAG service")
-    
-    print("="*80)
+    print(f"\n✅ Processing Complete!")
+    print(f"📊 Documents: {stats['processed_documents']}/{stats['total_documents']} | Chunks: {stats['total_chunks']} | Time: {stats['processing_time']:.1f}s")
+    print(f"📁 Output: {output_dir}")
+    print(f"📄 Files: all_chunks.json, embeddings.json")
 
 # =============================================================================
 # CLI INTERFACE
@@ -1139,6 +1322,8 @@ Examples:
                        help='Disable checksum generation')
     parser.add_argument('--no-embeddings', action='store_true',
                        help='Disable embedding generation')
+    parser.add_argument('--no-mongodb', action='store_true',
+                       help='Disable MongoDB integration')
     parser.add_argument('--test-only', action='store_true',
                        help='Run integration tests only')
     parser.add_argument('--validate', action='store_true',
@@ -1159,6 +1344,7 @@ Examples:
     os.environ['TIMEOUT_SECONDS'] = str(args.timeout)
     os.environ['ENABLE_CHECKSUMS'] = str(not args.no_checksums)
     os.environ['ENABLE_EMBEDDINGS'] = str(not args.no_embeddings)
+    os.environ['ENABLE_MONGODB'] = str(not args.no_mongodb)
     
     if args.test_only:
         return 0 if run_integration_tests() else 1

@@ -1,29 +1,17 @@
-Source: Intern_FAQ_AI_Bootcamp
-Chunk 0 of 20
-Size: 1385 characters
-Hash: b7dfb124d8f7cc4c58c8458e32b75c1be56646c7fafddb530ca0484973819894
+Source: Training_For_AI_Engineer_Interns
+Chunk 2 of 8
+Size: 966 characters
+Hash: 678394a76359864a9284eec2d6e6d2fdb7ee4f82eb400b20c2bf70b29d001bd7
 --------------------------------------------------
-﻿Intern FAQ - AI Bootcamp 
-
-
-Here are the next steps (Intern Onboarding). 
-
-
-1. IF YOU DIDN’T watch the welcome and onboarding video by Dr. Nancy Li, make sure to watch it now. This is mandatory to know how to be successful during the internship. 
-
-
-2. Join our Developer Discord server and complete your server onboarding process. Once you join the server will have pop-ups to guide you through the process. 
-* The first thing you should do after joining discord is to update your profile with your full name and linkedin url.  This is the main way everyone will communicate with you. 
-* Please introduce yourself in the #networking channel and post your techstack in the #techstack channel
-
-
-3. Watch past cohort demos [MANDATORY]
-* Summary of Cohort 1 and 2 Demo
-https://youtu.be/S69147JbQpU?si=p0fHjqO7tTlyUHTB
-* Example of Cohort 3 Demo (highly recommended)
-https://youtu.be/5OZjUtUdbbI?si=iW_JL81H3fjLl0yn
-
-
-4. Join our first tech mentor session. Dates will be announced in the Discord channel. Our mentor will give you an overview of how to collaborate in a cross-functional team during the AI project and how to find tech resources. Here is the link to the onboarding and training guide for all interns. Here are the Youtube playlists training referenced in the training guide above. 
-   1. Engineers’ Training Playlist
-   2. Designers’ Training Playlist
+* Prompt Engineering: Ability to improve the way you ask questions to LLMs so that you get better results.
+         * ChatGPT Prompt Engineering mini-course (1h)
+         * Mini-course Prompt engineering for vision models
+   * Advanced Prompting Techniques
+   * Top-Players, Tools and Frameworks: OpenAI, Azure OpenAI, Anthropic, Hugging Face, Langchain, CrewAI, OpenAI's GPTs
+   * Langchain Agents: AI bots able to use tools that allow them to access APIs, databases and more.
+      * Langchain agents simply explained
+   * Retrieval-Augmented Generation (RAG): 
+      * No Code: Build a RAG System Using Claude 3 Opus And MongoDB
+   * Conversational Agents: Group of AI agents able to assume roles and plan/discuss/validate answer before providing them.
+      * Here is a lecture from Andrew Ng demonstrating the Agentic Workflows and why they are game-changer
+* FastAPI = Web framework for building APIs with Python based on standard Python type hints.

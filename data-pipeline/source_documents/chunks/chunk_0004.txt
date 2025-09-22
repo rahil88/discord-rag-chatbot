@@ -1,46 +1,32 @@
 Source: AI_Bootcamp_Journey_Learning_Path
-Chunk 4 of 8
-Size: 1459 characters
-Hash: 932d7a80674ab9ebd6f74e1d6d439d569f11b80aa05e922c7cb7cfd8a65d5810
+Chunk 4 of 12
+Size: 964 characters
+Hash: 62a654fd6f1084924caef9fd0daa60682fb1266f241c755d1d455664a5307475
 --------------------------------------------------
-* GitHub - openai/openai-cookbook: Examples and guides for using the OpenAI API
-         * Vector Database Fundamentals
-         * What is a Vector Database & How Does it Work? Use Cases + Examples | Pinecone
+* Week 9: Cross-functional team collaboration. Agile feature development
+         * Week 10: Testing and Demo ready
+         * Week 11: Demo!
 
 
+Training Documents: 
+         * Training for Engineers (Click link)  
+         * Training for Designers (Click link)  
+         * Transformers Illustrated
+         * The Illustrated Transformer – Jay Alammar
+         * Andrej Karpathy's Neural Networks Zero to Hero
+         * Neural Networks: Zero to Hero - YouTube
+         * HuggingFace Course
+         * Introduction - Hugging Face NLP Course
 
 
-MLOps & Deployment (3 Days)
-         * Day 1: Development Practices
-         * Git workflow
-         * Code review process
-         * Documentation standards
-         * Testing strategies
-         * Day 2: Deployment
-         * Docker containerization
-         * CI/CD pipelines
-         * Model serving
-         * API development (FastAPI)
-         * Day 3: Monitoring
-         * Logging best practices
-         * Performance monitoring
-         * Cost tracking
-         * Error handling
-         * Resources:
-         * MLOps Zoomcamp
-         * GitHub - DataTalksClub/mlops-zoomcamp: Free MLOps course from DataTalks.Club
-         * FastAPI Documentation
-         * FastAPI
-         * Docker for ML
-         * Docker For Data Scientists
-
-
-
-
-Project-Based Learning (Weeks 3-11)
-         * Agile Scrum Methodology (Week 3)
-                        Please set aside 1 hour for Agile (Week 1&2)
-Understanding Agile Scrum.pdf
-What Is Agile Methodology? | Introduction to Agile Methodology in Six Minutes | Simplilearn
-What Is Agile Scrum Framework? | Scrum Framework Explained | Agile Methodology | Simplilearn
-Master the Daily Scrum: Everything You Need to Know for Agile Success! 🚀 | Scrum Basics Simplified
+Gen AI & Data Engineering (4 Days)
+Generative AI for Beginners | Microsoft Learn
+         * Day 1-2: LLM Fundamentals
+         * LLM architectures
+         * Prompt engineering
+         * Context length and limitations
+         * RAG (Retrieval Augmented Generation)
+         * Vector databases
+         * Day 3: Data Engineering
+         * Data preprocessing
+         * Text chunking strategies

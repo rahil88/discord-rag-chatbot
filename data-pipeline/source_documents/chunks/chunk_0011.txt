@@ -1,41 +1,18 @@
-Source: Training_For_AI_Engineer_Interns
-Chunk 3 of 6
-Size: 1457 characters
-Hash: ea2681bcede6373da1e5807442f194b0455d93f08ab72d4c9e53289f9a222477
+Source: AI_Bootcamp_Journey_Learning_Path
+Chunk 11 of 12
+Size: 612 characters
+Hash: afee1e4e722cd10653ec0d81f46fe4cf84885554cf61ad1dffc92a99ed106e77
 --------------------------------------------------
-* Image classification vs Object detection vs Image Segmentation | Deep Learning Tutorial 28
-         * Natural Language Processing In 5 Minutes | What Is NLP And How Does It Work? | Simplilearn
-      * Unsupervised: Clustering, Dimensionality Reduction
-         * Dimensionality Reduction
-         * Machine Learning - Dimensionality Reduction - Feature Extraction & Selection
-      * Reinforcement Learning
-         * OpenAI Plays Hide and Seek…and Breaks The Game! 🤖
-      * Generative Models
-         * What are GANs (Generative Adversarial Networks)?
-      * Anomaly Detection
-   * RLHF (Reinforced Learning with Human Feedback)
-      * Basic explanation
-      * If you need to go deeper, this course is the best
-   * Model Distillation
-      * Distilling Neural Networks | Two Minute Papers #218
-      * Quantization vs Pruning vs Distillation: Optimizing NNs for Inference
-   * Self-hosting LLMs
-      * All You Need To Know About Running LLMs Locally
-   * Fine-tuning
-      * Fine-tuning a Neural Network explained
-      * Catastrophic forgetting
+Week 4: Friday, February 21 @ 10am - Duration 30 mins Session Theme: AI Product Lifecycle https://youtu.be/sc8g3RvwBBk
 
 
-Agents- Advanced AI Concepts
-   * 4 AI Agent Strategies: (DeepLearning.AI)
-      * Reflection
-         * LangChain - Reflection Agents example
-      * Tool Use
-         * LangChain - Tool Calling        
-      * Planning
-         * LangGraph - Planning Agents
-      * Multi-agent Collaboration
-         * LangGraph: Multi-Agent Workflows
+Week 5: Friday, February 28 @ 11am - Duration 30 mins Session Theme: Outcome Mindset & Delivering Value  https://youtu.be/ADjjqyM1zP4
 
 
-      * Agent Evaluations
+Week 6: Friday, March 7 @ 11am - Duration 30 mins Session Theme: Q&A: Retrospective, how’s it going? (no recording) No Recording
+
+
+Week 7: Friday, March 14 @ 11am - Duration 1hr Session Theme: Q&A and Retrospective -  No recording 
+
+
+Week 10: Friday, April 4 @ 11am - Duration 1hr Final Session Theme: Demo Practice & Retrospective  - CANCELED

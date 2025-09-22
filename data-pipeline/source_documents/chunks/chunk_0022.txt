@@ -1,43 +1,26 @@
 Source: Intern_FAQ_AI_Bootcamp
-Chunk 8 of 20
-Size: 1485 characters
-Hash: 0181958b62d25357c582598db7200e25561acafa2681d9759dcf19aa3be64f41
+Chunk 2 of 30
+Size: 992 characters
+Hash: ef6cab7fa826d766f5c5668d8eb1de9c740c3303639b08d74c65a7307824357d
 --------------------------------------------------
-* PM Only: On-Demand Schedule your 1:1 resume review with our Executive Resume Coach
-* All: Sun 11/23 10:00 AM—11:00 AM (EST)    Office hours/Q&A sessions to clarify doubts
-Week 11: Al PM Interview and Product Demo
-*  PM Only: Mon 11/24 10:00 AM—12:00 PM (EST)    AI PM Interview
-* All - Tues 11/25 8:30 PM—10:30 PM (EST)   Group Project Demo: Showcase your product with a demo. Get feedback from AI advisors
-Current and upcoming cohort duration 
-* Cohort #6 = Sept-15-2025  - Nov-28-2025
-* Cohort #7 = Jan-19-2026  - Mar-30-2026 weeks
-* Cohort #8 = Aprl-06-2026  - Jun-19-2026 weeks
+6. There are 2 Team Matching sessions: 
+   1. Week 2: Product Managers will pitch to Designers to join their Ai product idea
+   2. Week 4: Product Mangers & Designers will create High-Fidelity designs to pitch their Ai product idea to Engineers/Data Scientists.
+              Note: Please look out for discord messages on exact dates. 
+It is mandatory that you join these Pitch Day sessions. 
+
+
+7. The offer letters will be sent by the support team
+
+
+
+
+If you need visa sponsorship, you must reply to this email and let us know what special things you need to put on the offer letter and what deadlines you have. Please also post the same request in the #visa-sponsorship discord channel. So that we can track the progress. 
+
+
+
+
+IMPORTANT: The best way to communicate with us is on Discord channels and tag Marla for operations questions. Please don’t DM Dr. Nancy Li. Put your questions in the public channel, someone in our team will get back to you. 
 
 
 ________________
-
-
-🧩 Team Matching Process
-🔹 Group Team Match (Week 4)
-During this phase, students will:
-* Fill out a team match form detailing their background, skills, and interests
-* Attend a Zoom team match call where PMs will pitch product ideas
-* Engineers will then fill out a Google form: 
-   * Sharing their tech stack years of experience
-   * Ranking their top 3 product idea choices
-   * Want to be a Lead Engineer or not. 
-* Teams will be formed based on mutual interest, project scope, and complementary skills
-📹 Example: Cohort 3's  team match video.
-________________
-
-
-🏅 Certification
-
-Interns will receive an official certificate from PM Accelerator, recognizing their contribution to building and launching a real AI product.
-This certification can be added to your resume, LinkedIn, and AI product portfolio.
-________________
-
-
-
-
-🏅 Intern Award

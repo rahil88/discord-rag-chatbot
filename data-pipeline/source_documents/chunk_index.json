@@ -1,244 +1,356 @@
 {
-  "total_chunks": 34,
-  "created_at": "2025-09-19 22:07:19",
+  "total_chunks": 50,
+  "created_at": "2025-09-22 10:51:36",
   "chunks": [
     {
       "chunk_id": 0,
       "title": "AI_Bootcamp_Journey_Learning_Path",
-      "size": 1485,
-      "hash": "33560de4fc22234b8a6161e0a91a16df2f4d42cdbd33b5c6a4e968ac77e4dfe3",
+      "size": 970,
+      "hash": "0ad9d63969561bfe6afe5afc4e2584c7199d8b017f42990b9479d5c37e7e83a2",
       "file": "chunk_0000.txt"
     },
     {
       "chunk_id": 1,
       "title": "AI_Bootcamp_Journey_Learning_Path",
-      "size": 1452,
-      "hash": "1cff6f5622eba346aa00b762d6c29638db53a10ed8062f442575e8816c660bbf",
+      "size": 955,
+      "hash": "5b604915a4b126da3429561680477bd6fb9ddbf2cafa07d63c776be86ad58a74",
       "file": "chunk_0001.txt"
     },
     {
       "chunk_id": 2,
       "title": "AI_Bootcamp_Journey_Learning_Path",
-      "size": 1447,
-      "hash": "45d4f3d23ab6fb53544a4b70e3ba793c02b459c5a37ac1dafd0ea3282fa7f11c",
+      "size": 987,
+      "hash": "f419fdb8a53624f173a6156023a03daf3b954cae10dc6a8e9b3d5939f0a8bfe4",
       "file": "chunk_0002.txt"
     },
     {
       "chunk_id": 3,
       "title": "AI_Bootcamp_Journey_Learning_Path",
-      "size": 1489,
-      "hash": "7db2bccc9c6737e8160220daa041b8f8fb3aad615d5b6ba1e095300f75690b53",
+      "size": 974,
+      "hash": "09a28dda067d32147f74a3ecb081f261a0e98e5541d95be46eef4d7d19aff49b",
       "file": "chunk_0003.txt"
     },
     {
       "chunk_id": 4,
       "title": "AI_Bootcamp_Journey_Learning_Path",
-      "size": 1459,
-      "hash": "932d7a80674ab9ebd6f74e1d6d439d569f11b80aa05e922c7cb7cfd8a65d5810",
+      "size": 964,
+      "hash": "62a654fd6f1084924caef9fd0daa60682fb1266f241c755d1d455664a5307475",
       "file": "chunk_0004.txt"
     },
     {
       "chunk_id": 5,
       "title": "AI_Bootcamp_Journey_Learning_Path",
-      "size": 1497,
-      "hash": "96cb100b471d3e6ce6ab3e9d4d1700e36df42ac3cc7183d5e7faf0543c2d22ef",
+      "size": 972,
+      "hash": "7b5f3dee85b140dfa3804a75265942012a5a71cb9b2f8d75939b2e0446758a09",
       "file": "chunk_0005.txt"
     },
     {
       "chunk_id": 6,
       "title": "AI_Bootcamp_Journey_Learning_Path",
-      "size": 1480,
-      "hash": "8639372119b30d664ceadd3859713c4740981aa7d9b8dafc0e246d9707e1c32b",
+      "size": 981,
+      "hash": "1525c1858bec8f42756e756bd1c74712a4b8e8fdd18474f89ac2f2951b7940bc",
       "file": "chunk_0006.txt"
     },
     {
       "chunk_id": 7,
       "title": "AI_Bootcamp_Journey_Learning_Path",
-      "size": 1172,
-      "hash": "f9374009c640acb03cad3215ad1c85a6f88993ef84a9150c740ad0dc016d87fb",
+      "size": 974,
+      "hash": "d23e38cb4fa37b612470f4fed2fedbf3b165fd537567a00f1747faffd8ba18bb",
       "file": "chunk_0007.txt"
     },
     {
       "chunk_id": 8,
-      "title": "Training_For_AI_Engineer_Interns",
-      "size": 1487,
-      "hash": "88273dab44bb8d2676b41564fea1d649ff16bd23d534a7cdccfa0709aa40f759",
+      "title": "AI_Bootcamp_Journey_Learning_Path",
+      "size": 960,
+      "hash": "ef3abb1e5c2282d6e7a5f967c576366cb48c6e1510f42c2f99c98f76619b4689",
       "file": "chunk_0008.txt"
     },
     {
       "chunk_id": 9,
-      "title": "Training_For_AI_Engineer_Interns",
-      "size": 1435,
-      "hash": "1bf8a56f10c71cab6e3228a9a45f615591f92a587c9858354f2be99d527dd8b8",
+      "title": "AI_Bootcamp_Journey_Learning_Path",
+      "size": 955,
+      "hash": "28ee01af66f5b2dea7100618b7ff87e6574b7d423ba7c488bec9f444dc9b32f4",
       "file": "chunk_0009.txt"
     },
     {
       "chunk_id": 10,
-      "title": "Training_For_AI_Engineer_Interns",
-      "size": 1487,
-      "hash": "da45c99ec8dafa677e8855ec10fcc31055677a2f10d40a58e41447c598d4b01a",
+      "title": "AI_Bootcamp_Journey_Learning_Path",
+      "size": 988,
+      "hash": "54ea0c8549e33a8012212f7741f27d89c87bbd4f623f23a59ed400a4f83451c7",
       "file": "chunk_0010.txt"
     },
     {
       "chunk_id": 11,
-      "title": "Training_For_AI_Engineer_Interns",
-      "size": 1457,
-      "hash": "ea2681bcede6373da1e5807442f194b0455d93f08ab72d4c9e53289f9a222477",
+      "title": "AI_Bootcamp_Journey_Learning_Path",
+      "size": 612,
+      "hash": "afee1e4e722cd10653ec0d81f46fe4cf84885554cf61ad1dffc92a99ed106e77",
       "file": "chunk_0011.txt"
     },
     {
       "chunk_id": 12,
       "title": "Training_For_AI_Engineer_Interns",
-      "size": 1461,
-      "hash": "101c31ea79c1dc1f9a80974e85fd559a53779c45116b4eddc83f1e8941a38185",
+      "size": 969,
+      "hash": "0ecab40e38fc70b9e2e70facc2b8aaf14588e51e613f0b9a2d9252e2dd7d6a7c",
       "file": "chunk_0012.txt"
     },
     {
       "chunk_id": 13,
       "title": "Training_For_AI_Engineer_Interns",
-      "size": 564,
-      "hash": "e27b4f389c9d3c5ce5d89b12ba0031c33b182ebf1a2b7ca74f0ebddfe3280cfb",
+      "size": 959,
+      "hash": "1ad733eccafc9f283d19b2ac322a60af278062aaa48073885a1df88b9b300bba",
       "file": "chunk_0013.txt"
     },
     {
       "chunk_id": 14,
-      "title": "Intern_FAQ_AI_Bootcamp",
-      "size": 1385,
-      "hash": "b7dfb124d8f7cc4c58c8458e32b75c1be56646c7fafddb530ca0484973819894",
+      "title": "Training_For_AI_Engineer_Interns",
+      "size": 966,
+      "hash": "678394a76359864a9284eec2d6e6d2fdb7ee4f82eb400b20c2bf70b29d001bd7",
       "file": "chunk_0014.txt"
     },
     {
       "chunk_id": 15,
-      "title": "Intern_FAQ_AI_Bootcamp",
-      "size": 1400,
-      "hash": "6816adaa6f1fb538973fd5ae2982d36234a225beda92ed7bce5f97c134326811",
+      "title": "Training_For_AI_Engineer_Interns",
+      "size": 991,
+      "hash": "97a18939a20884be46f776fab11574fe02e245d687b8efd3226245bd0c27b134",
       "file": "chunk_0015.txt"
     },
     {
       "chunk_id": 16,
-      "title": "Intern_FAQ_AI_Bootcamp",
-      "size": 1245,
-      "hash": "7ea5bb432a06ebd6d3ef119d5e29d6da6b5f1a9efa776264a46b9c11bf467582",
+      "title": "Training_For_AI_Engineer_Interns",
+      "size": 945,
+      "hash": "12f2db266f13faa6fc2e293512a5209bf69f270ef943980341631d3d2e53a77c",
       "file": "chunk_0016.txt"
     },
     {
       "chunk_id": 17,
-      "title": "Intern_FAQ_AI_Bootcamp",
-      "size": 1462,
-      "hash": "5ca9083ff4c544a86c688142b227fb9b2b72bb3a993b5336ede279fabca7b30a",
+      "title": "Training_For_AI_Engineer_Interns",
+      "size": 927,
+      "hash": "c50418b982eec6136ee695b916f6846293834afce85592f336d2715d70016c99",
       "file": "chunk_0017.txt"
     },
     {
       "chunk_id": 18,
-      "title": "Intern_FAQ_AI_Bootcamp",
-      "size": 1483,
-      "hash": "83d577d24b517e2c4fe7bbbe9d0d6b8bcdf5e2674a97a5e78a6c716c7b1c896d",
+      "title": "Training_For_AI_Engineer_Interns",
+      "size": 986,
+      "hash": "885d959eff3d1cf2a07fad04fd87c63ffec5eb5e738a912c6658f5831919e5c0",
       "file": "chunk_0018.txt"
     },
     {
       "chunk_id": 19,
-      "title": "Intern_FAQ_AI_Bootcamp",
-      "size": 1471,
-      "hash": "90785f68a4603f950b07abe67435a74a1e6c4482439582052c7f30ffdaeac48e",
+      "title": "Training_For_AI_Engineer_Interns",
+      "size": 797,
+      "hash": "7d0401f518159ee25a940105068ddc3952cc72e07a2a310bb7c95b6d5a08f4c2",
       "file": "chunk_0019.txt"
     },
     {
       "chunk_id": 20,
       "title": "Intern_FAQ_AI_Bootcamp",
-      "size": 1465,
-      "hash": "7d4c237f1b86232d5b3549d035e450c596d8dfcf893630e8758d4b0ce2f0e14e",
+      "size": 929,
+      "hash": "e5118433e708dbf3cfe38f15616c11cc32544f475a7e92e68e6ef172a1b847ed",
       "file": "chunk_0020.txt"
     },
     {
       "chunk_id": 21,
       "title": "Intern_FAQ_AI_Bootcamp",
-      "size": 1410,
-      "hash": "7ce8cad7047622927db991780b0101688d3ceca0d7cb97187e225525fc26a3b4",
+      "size": 984,
+      "hash": "c1770a8ebd1346817d720cc6d5425b89507b02f3ee356f9b73fd128ebd60d03a",
       "file": "chunk_0021.txt"
     },
     {
       "chunk_id": 22,
       "title": "Intern_FAQ_AI_Bootcamp",
-      "size": 1485,
-      "hash": "0181958b62d25357c582598db7200e25561acafa2681d9759dcf19aa3be64f41",
+      "size": 992,
+      "hash": "ef6cab7fa826d766f5c5668d8eb1de9c740c3303639b08d74c65a7307824357d",
       "file": "chunk_0022.txt"
     },
     {
       "chunk_id": 23,
       "title": "Intern_FAQ_AI_Bootcamp",
-      "size": 1488,
-      "hash": "205d2ea0b9fd784b5da77de44834ba0ad24e9469adcbda37b268f2f582cd77b9",
+      "size": 931,
+      "hash": "10624569ac3c0ac8e8eb0976dbd7bde41d09c8b36288d32057567418ef3ff040",
       "file": "chunk_0023.txt"
     },
     {
       "chunk_id": 24,
       "title": "Intern_FAQ_AI_Bootcamp",
-      "size": 1478,
-      "hash": "c24d5f797a883547e1042ddd2221664a4134cc71fdc4fe8c74a0fbe51bfea6c6",
+      "size": 838,
+      "hash": "fd56888234d6fb0b241f57f45612e87abc994d58b0f012221cf3c0dc5f0dacdd",
       "file": "chunk_0024.txt"
     },
     {
       "chunk_id": 25,
       "title": "Intern_FAQ_AI_Bootcamp",
-      "size": 1474,
-      "hash": "fe8c7126a967d8001c27c6db7584e2fc7c690ce5f5049219981b5b2665bea528",
+      "size": 873,
+      "hash": "fa490ff0d9102f5a3967e56c4d72659a7be706f40de3770e1b648c54e502269c",
       "file": "chunk_0025.txt"
     },
     {
       "chunk_id": 26,
       "title": "Intern_FAQ_AI_Bootcamp",
-      "size": 1277,
-      "hash": "b776907b24240b5609aa53009d677870f5b19fe807aef5e1462d690670799dd6",
+      "size": 977,
+      "hash": "c063a694c4e43ed14e34a6771df0bb34f541d0538ad4bc4449778b5a40cb0320",
       "file": "chunk_0026.txt"
     },
     {
       "chunk_id": 27,
       "title": "Intern_FAQ_AI_Bootcamp",
-      "size": 1408,
-      "hash": "cf7beb0c82bea4fe7d24abc771abcd37c2ee2bac49e754e5cfe32bfc0c82be7e",
+      "size": 869,
+      "hash": "27bc85cbab18f0f613190a5aa425282abc62ca81e496f185290cafe7cc573d92",
       "file": "chunk_0027.txt"
     },
     {
       "chunk_id": 28,
       "title": "Intern_FAQ_AI_Bootcamp",
-      "size": 1321,
-      "hash": "f232c99e452dac5edc9e763db4ead32c5d61b47b8aa27afd5efb5e70595c6ffc",
+      "size": 914,
+      "hash": "f7769c82482bd242161cc1b181018411db9cb73856162c5ccfae7c2839ea800d",
       "file": "chunk_0028.txt"
     },
     {
       "chunk_id": 29,
       "title": "Intern_FAQ_AI_Bootcamp",
-      "size": 1433,
-      "hash": "8ceba4147810f66f9e5785fc3519a1d25e75fef3378684f4116befbb914d250b",
+      "size": 950,
+      "hash": "a3e5a55c4d31859c4273e8700f5de95f4e87c66f37d524b532469627c6e6d536",
       "file": "chunk_0029.txt"
     },
     {
       "chunk_id": 30,
       "title": "Intern_FAQ_AI_Bootcamp",
-      "size": 1317,
-      "hash": "6c4bd0c8b98ae7101280bcefd551c7a78a16bb647eb574f2d8190d416f25829f",
+      "size": 929,
+      "hash": "933d7979cdeeffa62f60efa5e42fd8e0d6386f5807d1953d8fda8f75a186f9ef",
       "file": "chunk_0030.txt"
     },
     {
       "chunk_id": 31,
       "title": "Intern_FAQ_AI_Bootcamp",
-      "size": 1481,
-      "hash": "3fe0de1c66874092641ff63019109e8865638419a827194aae9ae1d48ecab5e3",
+      "size": 995,
+      "hash": "e43be6d586933b6a8ac911b831fd768927712c15a5a7dae3a8ae07ec82308e7d",
       "file": "chunk_0031.txt"
     },
     {
       "chunk_id": 32,
       "title": "Intern_FAQ_AI_Bootcamp",
-      "size": 1479,
-      "hash": "60eef9461c784708f514166d683f43fde4e8de2c79c11da5527a765def9b3df6",
+      "size": 944,
+      "hash": "2f40c9ab45fd6a39b1376960d9414d0ada4e0e8741fe5614949d96c40137d805",
       "file": "chunk_0032.txt"
     },
     {
       "chunk_id": 33,
       "title": "Intern_FAQ_AI_Bootcamp",
-      "size": 1309,
-      "hash": "3360baeb0d89429c8c4d90928b59d8baaa5403e6294162faa920e3791a3783fd",
+      "size": 984,
+      "hash": "f3f2d625e693c1918321bb5bb07b8c661418711693edcfa8f5d8f8b48ef91f3b",
       "file": "chunk_0033.txt"
+    },
+    {
+      "chunk_id": 34,
+      "title": "Intern_FAQ_AI_Bootcamp",
+      "size": 963,
+      "hash": "f6bf95a6c1e4a7c2c9d7746549eb7c74a649765e3e0af81dd74c88500756587c",
+      "file": "chunk_0034.txt"
+    },
+    {
+      "chunk_id": 35,
+      "title": "Intern_FAQ_AI_Bootcamp",
+      "size": 959,
+      "hash": "42abfd9ddaf8a692786670b9a290312ffbf3d8ab4f42954fe2ba9e2f6771dc3b",
+      "file": "chunk_0035.txt"
+    },
+    {
+      "chunk_id": 36,
+      "title": "Intern_FAQ_AI_Bootcamp",
+      "size": 782,
+      "hash": "04a0b83f5ac7b8599d2af6342edbfc224700f83dca610bee7de5f9be7abe597e",
+      "file": "chunk_0036.txt"
+    },
+    {
+      "chunk_id": 37,
+      "title": "Intern_FAQ_AI_Bootcamp",
+      "size": 875,
+      "hash": "3d22387661a8118fc8e56c3a7f2023a3e93bc69e0d92f9635ff649c324e23034",
+      "file": "chunk_0037.txt"
+    },
+    {
+      "chunk_id": 38,
+      "title": "Intern_FAQ_AI_Bootcamp",
+      "size": 886,
+      "hash": "91c8814438fb0bf56197f3a0ed9049a5f2442e969f2776e88dffd6418d99c816",
+      "file": "chunk_0038.txt"
+    },
+    {
+      "chunk_id": 39,
+      "title": "Intern_FAQ_AI_Bootcamp",
+      "size": 979,
+      "hash": "df50a02eeb55184ea2e22de5fd9760b000de840e4348cad3effb9fb73b9d78a1",
+      "file": "chunk_0039.txt"
+    },
+    {
+      "chunk_id": 40,
+      "title": "Intern_FAQ_AI_Bootcamp",
+      "size": 929,
+      "hash": "dceab07bafae2061a0de1c160f1da89f1114706d02a49dbb2b893401f25ad7c2",
+      "file": "chunk_0040.txt"
+    },
+    {
+      "chunk_id": 41,
+      "title": "Intern_FAQ_AI_Bootcamp",
+      "size": 916,
+      "hash": "863bf4deaaad82322cc0e4868152d1ad67331e10452c0eaf69d743a81509628e",
+      "file": "chunk_0041.txt"
+    },
+    {
+      "chunk_id": 42,
+      "title": "Intern_FAQ_AI_Bootcamp",
+      "size": 968,
+      "hash": "97f2221a68339bbb4ea8e4ce0112e2c4f00a8c3a74d83c209f698144d6f90c76",
+      "file": "chunk_0042.txt"
+    },
+    {
+      "chunk_id": 43,
+      "title": "Intern_FAQ_AI_Bootcamp",
+      "size": 704,
+      "hash": "ea41bd7e20956bc8c5d5041ac4e4d90336d96f9a2008145eca3badf6c5b27c77",
+      "file": "chunk_0043.txt"
+    },
+    {
+      "chunk_id": 44,
+      "title": "Intern_FAQ_AI_Bootcamp",
+      "size": 943,
+      "hash": "913807f909de3d3af012a754f7e040bd4ee453fa3d11317ea8584704d16c0d22",
+      "file": "chunk_0044.txt"
+    },
+    {
+      "chunk_id": 45,
+      "title": "Intern_FAQ_AI_Bootcamp",
+      "size": 995,
+      "hash": "e5fbf8e093deee2bb50649fb61960ff138348114b1da84348f86fd7249aa14a5",
+      "file": "chunk_0045.txt"
+    },
+    {
+      "chunk_id": 46,
+      "title": "Intern_FAQ_AI_Bootcamp",
+      "size": 994,
+      "hash": "5915b15f1d5339a903b1432937f6ee3ae7314dbb5d11a720449ad1f72a51b361",
+      "file": "chunk_0046.txt"
+    },
+    {
+      "chunk_id": 47,
+      "title": "Intern_FAQ_AI_Bootcamp",
+      "size": 886,
+      "hash": "596ef48204c59c8958f0e7cf8146d7f22fb7eaa714f4c86850746233a69dc13d",
+      "file": "chunk_0047.txt"
+    },
+    {
+      "chunk_id": 48,
+      "title": "Intern_FAQ_AI_Bootcamp",
+      "size": 817,
+      "hash": "8dca582bfe6db0b5f9c3a97d14b1ac7eee2e396612ca6b70503d549fb0073ec8",
+      "file": "chunk_0048.txt"
+    },
+    {
+      "chunk_id": 49,
+      "title": "Intern_FAQ_AI_Bootcamp",
+      "size": 489,
+      "hash": "a7133cca72a6318624febb40b335b7c9d0f9053ae0e64678382c143e72248200",
+      "file": "chunk_0049.txt"
     }
   ]
 }

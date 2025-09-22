@@ -1,41 +1,34 @@
 Source: AI_Bootcamp_Journey_Learning_Path
-Chunk 5 of 8
-Size: 1497 characters
-Hash: 96cb100b471d3e6ce6ab3e9d4d1700e36df42ac3cc7183d5e7faf0543c2d22ef
+Chunk 5 of 12
+Size: 972 characters
+Hash: 7b5f3dee85b140dfa3804a75265942012a5a71cb9b2f8d75939b2e0446758a09
 --------------------------------------------------
-What Is Agile Methodology? | Introduction to Agile Methodology in Six Minutes | Simplilearn
-What Is Agile Scrum Framework? | Scrum Framework Explained | Agile Methodology | Simplilearn
-Master the Daily Scrum: Everything You Need to Know for Agile Success! 🚀 | Scrum Basics Simplified
-What are the tools and techniques for documenting and tracking scope and change in agile?
-         * Sprint Structure: (team consensus)
-         * 1-2 week sprints
-         * Daily standups (15 mins)
-         * Sprint planning (1 hour)
-         * Sprint review (20 mins)
-         * Retrospective (20 mins)
-         * Documentation Requirements: (team consensus)
-         * Sprint backlog
-         * User stories
-         * Technical documentation
-         * API documentation
-         * Deployment guides
-         * Tools: [PM’s to choose]
-         * Any free Project tracking tool (JIRA, Monday etc.)
-         * https://clickup.com/
-         * Google Sheets
-         * https://linear.app/ 
-         * https://taiga.io/ 
-         *          * Any choice of documentation tool
-         * GitHub for code management
-         * Team Collaborations (Weeks 4-11)
-         * Team Structure:
-         * Roles:
-         *   Full Stack Engineer
-         * Front end Engineer
-         * Back end Engineer
-         * Fullstack Engineer
-         *   Data Scientist
-         *   Data Engineer
-         *   UX Designer
-         *   Product Manager
-         * Weekly Schedule: (team consensus)
+* RAG (Retrieval Augmented Generation)
+         * Vector databases
+         * Day 3: Data Engineering
+         * Data preprocessing
+         * Text chunking strategies
+         * Embedding models
+         * Vector similarity search
+         * Data quality and validation
+         * Day 4: Integration
+         * API integration (OpenAI, Anthropic)
+         * Streaming responses
+         * Error handling
+         * Cost optimization
+         * Practical Exercises:
+         * Build a simple chatbot
+         * Implement RAG system
+         * Create custom training dataset
+         * Resources:
+         * LangChain Documentation
+         * Tutorials | 🦜️🔗 LangChain
+         * OpenAI Cookbook
+         * GitHub - openai/openai-cookbook: Examples and guides for using the OpenAI API
+         * Vector Database Fundamentals
+         * What is a Vector Database & How Does it Work? Use Cases + Examples | Pinecone
+
+
+
+
+MLOps & Deployment (3 Days)

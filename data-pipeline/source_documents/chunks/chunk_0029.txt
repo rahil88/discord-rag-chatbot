@@ -1,19 +1,17 @@
 Source: Intern_FAQ_AI_Bootcamp
-Chunk 15 of 20
-Size: 1433 characters
-Hash: 8ceba4147810f66f9e5785fc3519a1d25e75fef3378684f4116befbb914d250b
+Chunk 9 of 30
+Size: 950 characters
+Hash: a3e5a55c4d31859c4273e8700f5de95f4e87c66f37d524b532469627c6e6d536
 --------------------------------------------------
-9. Q: What is the evaluation process for the technical assessment?
-   * A: Our tech recruiter will review your tech assessment one by one.
-10. Q: Will there be any technical courses provided?
-   * A: Recommended courses will be provided, and most of them are free. You can check out our free training here. The most expensive ones are around $50. If you already have all the required skills, you don't need to take additional courses. However, if you don't have the necessary AI skills, you will need to pay for your own AI courses. Most of these courses are offered by Deeplearning.ai.
-11. Q: Will I have access to the Discord channel before being selected?
-   * A: No, only selected participants will gain access to the Discord channel.
-12. Q: Can I join the internship in the next cohort?
-   * A: Yes. Make sure to communicate with our team. We will see if you can fit into the next cohort.
-13. Q: What happens if I don’t meet the coding skill requirements?
-   * A: You will not be selected for the internship if your coding skills do not meet the required standards.
-14. Q: How will the internship experience be recognized on LinkedIn?
-   * A: You can list the internship experience on LinkedIn after successfully completing the project.
-15. Q: What is the team size for the projects?
-   * A: Teams typically consist of 8 to 10 people, including product managers and engineers, depending on the scope of the project.
+* PM Only: Mon 9/22 8 PM—10 PM (EST)    AI PM Life Cycle Session
+* PM & Designers : Tue 9/23 10 —12 PM (EST)  Group Project Kickoff: Pitch ideas, & assemble team 
+* All - Sun 9/28 10:00 AM—11:00 AM (EST)    Office hours/Q&A sessions to clarify doubts
+Week 3: Existing LLM and Al Models, Trade-offs, and Pricing
+* PM Only:Mon 9/29 9- 10:30 PM (EST) Structuring Your Product Team for Success [Linda Wang]
+* PM Only: Tues 9/30 8:00 PM - 10 PM (EST)  AI Models and LLM Session [Mentor: Adam Zhu]
+* All - Sun 10/5 10:00 AM - 11 AM (EST)    Office hours/Q&A sessions to clarify doubts
+Week 4: Advanced AI
+* PM Only: Tues 10/7  8:00 PM—10:00 PM (EST)    Advanced AI Session [Mentor: Adam Zhu]
+* All - Tue 10/7 10:00 AM—12:00 PM (EST)  AI Developer Team Match: Pitch ideas and team match with developers and a demo
+* All - Sun 10/12 10:00 AM—11:00 AM (EST)    Office hours/Q&A sessions to clarify doubts
+Week 5: AI UI/UX Design and AI Architecture
