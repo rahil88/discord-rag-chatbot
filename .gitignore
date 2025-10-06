@@ -92,3 +92,4 @@ logs/
 # Model files (if large)
 *.bin
 *.safetensors
+*.env.backup

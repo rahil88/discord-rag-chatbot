@@ -15,13 +15,13 @@ import json
 import logging
 import numpy as np
 from typing import List, Dict, Any, Optional, Tuple
-from pathlib import Path
 from dataclasses import dataclass
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 import time
 from pymongo import MongoClient
 from pymongo.errors import ConnectionFailure, ServerSelectionTimeoutError
+from src.azure_ai_client import AzureAIFoundryClient, create_azure_ai_client
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -48,13 +48,17 @@ class RAGService:
     """Main RAG service for document retrieval and response generation."""
     
     def __init__(self, 
-                 chunks_file: str = "/Users/craddy-san/Desktop/Projects/discord-rag-chatbot/discord-rag-chatbot/data-pipeline/source_documents/all_chunks.json",
-                 embeddings_file: str = "/Users/craddy-san/Desktop/Projects/discord-rag-chatbot/discord-rag-chatbot/data-pipeline/source_documents/embeddings.json",
+                 chunks_file: str = "/app/data/all_chunks.json",
+                 embeddings_file: str = "/app/data/embeddings.json",
                  model_name: str = "BAAI/bge-base-en-v1.5",
                  mongodb_connection_string: Optional[str] = None,
                  mongodb_database: str = "discord_rag",
                  mongodb_collection: str = "document_chunks",
-                 use_mongodb: bool = False):
+                 use_mongodb: bool = False,
+                 use_azure_ai: bool = True,
+                 azure_endpoint: Optional[str] = None,
+                 azure_api_key: Optional[str] = None,
+                 azure_model_name: Optional[str] = None):
         """
         Initialize the RAG service.
         
@@ -66,6 +70,10 @@ class RAGService:
             mongodb_database: MongoDB database name
             mongodb_collection: MongoDB collection name
             use_mongodb: Whether to use MongoDB for vector search instead of local files
+            use_azure_ai: Whether to use Azure AI Foundry for response generation
+            azure_endpoint: Azure AI Foundry endpoint URL
+            azure_api_key: Azure AI Foundry API key
+            azure_model_name: Azure AI Foundry model name
         """
         self.chunks_file = chunks_file
         self.embeddings_file = embeddings_file
@@ -83,8 +91,17 @@ class RAGService:
         self.mongodb_client = None
         self.mongodb_collection_obj = None
         
+        # Azure AI configuration
+        self.use_azure_ai = use_azure_ai
+        self.azure_endpoint = azure_endpoint
+        self.azure_api_key = azure_api_key
+        self.azure_model_name = azure_model_name
+        self.azure_client = None
+        
         # Initialize the service
         self._load_model()
+        if self.use_azure_ai:
+            self._initialize_azure_ai()
         if self.use_mongodb and self.mongodb_connection_string:
             self._connect_mongodb()
         else:
@@ -99,6 +116,21 @@ class RAGService:
         except Exception as e:
             logger.error(f"Failed to load model {self.model_name}: {e}")
             raise
+    
+    def _initialize_azure_ai(self) -> None:
+        """Initialize Azure AI Foundry client."""
+        try:
+            logger.info("Initializing Azure AI Foundry client...")
+            self.azure_client = AzureAIFoundryClient(
+                endpoint=self.azure_endpoint,
+                api_key=self.azure_api_key,
+                model_name=self.azure_model_name
+            )
+            logger.info("Successfully initialized Azure AI Foundry client")
+        except Exception as e:
+            logger.error(f"Failed to initialize Azure AI client: {e}")
+            logger.warning("Falling back to simple text-based response generation")
+            self.use_azure_ai = False
     
     def _connect_mongodb(self) -> None:
         """Connect to MongoDB for vector search."""
@@ -168,23 +200,42 @@ class RAGService:
             # Extract embeddings and create mapping
             embeddings_list = []
             self.embedding_to_chunk_map = {}
+            skipped_embeddings = 0
+            
+            logger.info(f"Processing {len(self.embeddings_data)} embedding entries")
             
             for i, emb_data in enumerate(self.embeddings_data):
                 if 'embedding' in emb_data and emb_data['embedding']:
+                    embedding_index = len(embeddings_list)  # Use current length
                     embeddings_list.append(emb_data['embedding'])
-                    self.embedding_to_chunk_map[len(embeddings_list) - 1] = {
+                    self.embedding_to_chunk_map[embedding_index] = {  # Use embedding_index
                         'chunk_id': emb_data.get('chunk_id', i),
                         'document_title': emb_data.get('document_title', 'Unknown')
                     }
+                else:
+                    skipped_embeddings += 1
+                    logger.debug(f"Skipped embedding {i}: missing or empty embedding data")
             
             if embeddings_list:
                 self.document_embeddings = np.array(embeddings_list)
                 logger.info(f"Prepared embeddings matrix with shape: {self.document_embeddings.shape}")
+                logger.info(f"Successfully processed {len(embeddings_list)} embeddings, skipped {skipped_embeddings}")
+                
+                # Validate embedding dimensions
+                if len(embeddings_list) > 0:
+                    embedding_dim = len(embeddings_list[0])
+                    logger.debug(f"Embedding dimension: {embedding_dim}")
+                    
+                    # Check for consistent dimensions
+                    inconsistent_dims = [i for i, emb in enumerate(embeddings_list) if len(emb) != embedding_dim]
+                    if inconsistent_dims:
+                        logger.warning(f"Found {len(inconsistent_dims)} embeddings with inconsistent dimensions")
             else:
                 logger.warning("No valid embeddings found")
                 
         except Exception as e:
             logger.error(f"Failed to prepare embeddings matrix: {e}")
+            logger.error(f"Error type: {type(e).__name__}")
             self.document_embeddings = None
     
     def search_documents(self, query: str, top_k: int = 5, min_similarity: float = 0.15) -> List[SearchResult]:
@@ -207,31 +258,46 @@ class RAGService:
         
         try:
             # Generate query embedding using the same BGE model
+            logger.debug(f"Generating embedding for query: '{query.strip()}'")
             query_embedding = self.model.encode([query.strip()])
+            logger.debug(f"Query embedding shape: {query_embedding.shape}")
             
-            # Use MongoDB vector search if available
+            # Determine search strategy and log it
+            search_strategy = "unknown"
             if self.use_mongodb and self.mongodb_collection_obj is not None:
+                search_strategy = "MongoDB vector search"
+                logger.debug(f"Using {search_strategy}")
                 results = self._search_with_mongodb_vector_search(
                     query_embedding, top_k, min_similarity
                 )
-            # If we have pre-computed embeddings, use them
             elif self.document_embeddings is not None:
+                search_strategy = "pre-computed embeddings"
+                logger.debug(f"Using {search_strategy} (matrix shape: {self.document_embeddings.shape})")
                 results = self._search_with_precomputed_embeddings(
                     query_embedding, top_k, min_similarity
                 )
             else:
-                # Fallback: compute similarities on the fly
+                search_strategy = "real-time embeddings"
+                logger.debug(f"Using {search_strategy} (chunks: {len(self.chunks_data)})")
                 results = self._search_with_realtime_embeddings(
                     query, query_embedding, top_k, min_similarity
                 )
             
             processing_time = time.time() - start_time
-            logger.info(f"Search completed in {processing_time:.3f}s, found {len(results)} results")
+            logger.info(f"Search completed in {processing_time:.3f}s using {search_strategy}, found {len(results)} results")
+            
+            # Log result quality metrics
+            if results:
+                similarity_scores = [r.similarity_score for r in results]
+                logger.debug(f"Similarity scores: min={min(similarity_scores):.3f}, max={max(similarity_scores):.3f}, avg={sum(similarity_scores)/len(similarity_scores):.3f}")
             
             return results
             
         except Exception as e:
-            logger.error(f"Search failed: {e}")
+            processing_time = time.time() - start_time
+            logger.error(f"Search failed after {processing_time:.3f}s: {e}")
+            logger.error(f"Error type: {type(e).__name__}")
+            logger.error(f"Query: '{query}', top_k: {top_k}, min_similarity: {min_similarity}")
             return []
     
     def _search_with_precomputed_embeddings(self, query_embedding: np.ndarray, 
@@ -266,6 +332,10 @@ class RAGService:
                     chunk_id=chunk_id
                 )
                 results.append(result)
+            else:
+                # Log when we can't find a chunk that should exist
+                logger.warning(f"Embedding found for chunk_id={chunk_id}, document='{document_title}' but chunk data not found in chunks_data")
+                logger.debug(f"This indicates a potential data inconsistency between embeddings and chunks")
         
         return results
     
@@ -359,14 +429,14 @@ class RAGService:
                 return []
             
             # Compute similarities
-            similarities = []
             doc_embeddings = []
+            valid_docs = []
             
             for doc in documents:
                 embedding = doc.get('embedding')
                 if embedding and len(embedding) > 0:
                     doc_embeddings.append(embedding)
-                    similarities.append(doc)
+                    valid_docs.append(doc)  # Store documents separately
             
             if not doc_embeddings:
                 logger.warning("No valid embeddings found in documents")
@@ -377,12 +447,11 @@ class RAGService:
             query_embedding_array = np.array(query_vector).reshape(1, -1)
             
             # Compute cosine similarities
-            from sklearn.metrics.pairwise import cosine_similarity
             similarities_scores = cosine_similarity(query_embedding_array, doc_embeddings_array)[0]
             
             # Create results with similarity scores
             results = []
-            for i, (doc, similarity_score) in enumerate(zip(similarities, similarities_scores)):
+            for i, (doc, similarity_score) in enumerate(zip(valid_docs, similarities_scores)):
                 if similarity_score >= min_similarity:
                     # Extract document data
                     content = doc.get('content', '')
@@ -423,11 +492,39 @@ class RAGService:
     
     def _find_chunk_by_id(self, chunk_id: int, document_title: str) -> Optional[Dict[str, Any]]:
         """Find a specific chunk by its ID and document title."""
+        logger.debug(f"Searching for chunk_id={chunk_id}, document_title='{document_title}'")
+        
+        # Track search statistics for debugging
+        total_chunks = len(self.chunks_data)
+        matching_document_chunks = 0
+        matching_id_chunks = 0
+        
         for chunk_data in self.chunks_data:
             metadata = chunk_data.get('metadata', {})
+            
+            # Count chunks for debugging
+            if metadata.get('title') == document_title:
+                matching_document_chunks += 1
+            if metadata.get('chunk_id') == chunk_id:
+                matching_id_chunks += 1
+            
+            # Check for exact match
             if (metadata.get('chunk_id') == chunk_id and 
                 metadata.get('title') == document_title):
+                logger.debug(f"Found chunk: chunk_id={chunk_id}, document='{document_title}', content_length={len(chunk_data.get('content', ''))}")
                 return chunk_data
+        
+        # Enhanced error logging with diagnostic information
+        logger.warning(f"Chunk not found: chunk_id={chunk_id}, document_title='{document_title}'")
+        logger.warning(f"Search diagnostics: total_chunks={total_chunks}, chunks_with_matching_document={matching_document_chunks}, chunks_with_matching_id={matching_id_chunks}")
+        
+        # Log available chunk IDs and document titles for debugging
+        if total_chunks > 0:
+            available_chunk_ids = [chunk.get('metadata', {}).get('chunk_id') for chunk in self.chunks_data[:5]]
+            available_titles = list(set([chunk.get('metadata', {}).get('title') for chunk in self.chunks_data]))
+            logger.debug(f"Available chunk_ids (first 5): {available_chunk_ids}")
+            logger.debug(f"Available document titles: {available_titles}")
+        
         return None
     
     def generate_response(self, query: str, top_k: int = 5, 
@@ -444,6 +541,10 @@ class RAGService:
             RAGResponse object with answer, sources, and metadata
         """
         start_time = time.time()
+        
+        # Check if this is a simple greeting
+        if self._is_greeting(query):
+            return self._generate_greeting_response(query, start_time)
         
         # Search for relevant documents
         search_results = self.search_documents(query, top_k, min_similarity)
@@ -471,30 +572,304 @@ class RAGService:
             processing_time=processing_time
         )
     
+    def _is_greeting(self, query: str) -> bool:
+        """
+        Check if the query is a simple greeting.
+        
+        Args:
+            query: The user's query
+            
+        Returns:
+            True if it's a greeting, False otherwise
+        """
+        query_lower = query.lower().strip()
+        
+        # Common greetings
+        greetings = [
+            'hi', 'hey', 'hello', 'hiya', 'howdy', 'greetings',
+            'good morning', 'good afternoon', 'good evening',
+            'what\'s up', 'whats up', 'sup', 'yo',
+            'good day', 'how are you', 'how do you do'
+        ]
+        
+        # Check for exact matches or very short queries
+        if query_lower in greetings:
+            return True
+            
+        # Check for queries that are just greetings (very short and simple)
+        if len(query_lower.split()) <= 2 and any(greeting in query_lower for greeting in greetings):
+            return True
+            
+        return False
+    
+    def _generate_greeting_response(self, query: str, start_time: float) -> RAGResponse:
+        """
+        Generate a friendly greeting response.
+        
+        Args:
+            query: The user's greeting
+            start_time: Start time for processing time calculation
+            
+        Returns:
+            RAGResponse with greeting message
+        """
+        greeting_responses = [
+            "Hello! 👋 I'm your AI Bootcamp assistant. I can help you with questions about:",
+            "Hi there! 🤖 Welcome! I'm here to help you with AI Bootcamp information. I can assist with:",
+            "Hey! 😊 Great to meet you! I'm your AI Bootcamp FAQ bot. I can help you learn about:",
+            "Hello! 🚀 Nice to see you! I'm here to answer questions about the AI Bootcamp program. I can help with:"
+        ]
+        
+        import random
+        greeting = random.choice(greeting_responses)
+        
+        help_topics = [
+            "• **Program Details**: Duration, structure, and timeline",
+            "• **Team Matching**: How to join teams and collaborate", 
+            "• **Technologies**: What you'll learn and work with",
+            "• **Requirements**: Deadlines, sessions, and expectations",
+            "• **Communication**: Discord channels and protocols",
+            "• **Visa Support**: Sponsorship and documentation help"
+        ]
+        
+        response_text = f"{greeting}\n\n" + "\n".join(help_topics) + "\n\n**What would you like to know about?** Just ask me anything! 😊"
+        
+        processing_time = time.time() - start_time
+        
+        return RAGResponse(
+            answer=response_text,
+            sources=[],
+            confidence=1.0,  # High confidence for greetings
+            processing_time=processing_time
+        )
+    
     def _generate_answer_from_chunks(self, query: str, search_results: List[SearchResult]) -> str:
-        """Generate a coherent answer from the retrieved chunks."""
+        """Generate a coherent answer from the retrieved chunks using enhanced DeepSeek integration."""
         if not search_results:
             return "No relevant information found."
         
         # Sort results by similarity score
         sorted_results = sorted(search_results, key=lambda x: x.similarity_score, reverse=True)
         
-        # Combine the most relevant chunks
+        # Use Azure AI Foundry DeepSeek if available
+        if self.use_azure_ai and self.azure_client:
+            try:
+                # Enhanced context preparation for better LLM understanding
+                context_chunks = self._prepare_enhanced_context_chunks(sorted_results)
+                
+                logger.info(f"Generating response with {len(context_chunks)} context chunks")
+                logger.debug(f"Query: {query}")
+                logger.debug(f"Top similarity scores: {[r.similarity_score for r in sorted_results[:3]]}")
+                
+                # Generate response using enhanced DeepSeek integration
+                response = self.azure_client.generate_rag_response(
+                    query=query,
+                    context_chunks=context_chunks,
+                    max_tokens=1200,  # Increased for more comprehensive responses
+                    temperature=0.7,
+                    include_sources=True
+                )
+                
+                # Process and enhance the response
+                enhanced_answer = self._enhance_llm_response(response.content, sorted_results)
+                
+                logger.info("Successfully generated response using DeepSeek")
+                return enhanced_answer
+                
+            except Exception as e:
+                logger.error(f"DeepSeek generation failed: {e}")
+                logger.warning("Falling back to simple text-based response generation")
+                # Fall through to simple text generation
+        
+        # Fallback: Simple text-based response generation
+        return self._generate_fallback_response(query, sorted_results)
+    
+    def _prepare_enhanced_context_chunks(self, search_results: List[SearchResult]) -> List[str]:
+        """
+        Prepare context chunks with enhanced formatting for better LLM understanding.
+        
+        Args:
+            search_results: List of SearchResult objects sorted by relevance
+            
+        Returns:
+            List of formatted context chunk strings
+        """
+        context_chunks = []
+        
+        for i, result in enumerate(search_results[:5]):  # Use top 5 most relevant chunks
+            content = result.content.strip()
+            
+            # Truncate very long chunks to prevent token overflow
+            if len(content) > 1000:
+                content = content[:1000] + "..."
+            
+            # Create enhanced context chunk with metadata
+            enhanced_chunk = f"""Source Document: {result.source_document}
+Relevance Score: {result.similarity_score:.3f}
+Content: {content}"""
+            
+            context_chunks.append(enhanced_chunk)
+        
+        return context_chunks
+    
+    def _enhance_llm_response(self, llm_response: str, search_results: List[SearchResult]) -> str:
+        """
+        Enhance the LLM response with additional metadata and source information.
+        
+        Args:
+            llm_response: The response generated by the LLM
+            search_results: List of SearchResult objects used for context
+            
+        Returns:
+            Enhanced response string
+        """
+        # Add source information
+        source_info = f"\n\n---\n*Response generated using {len(search_results)} relevant document sections*"
+        
+        # Add confidence indicator based on similarity scores
+        if search_results:
+            avg_confidence = sum(r.similarity_score for r in search_results[:3]) / min(3, len(search_results))
+            confidence_level = "High" if avg_confidence > 0.7 else "Medium" if avg_confidence > 0.4 else "Low"
+            confidence_info = f"\n*Confidence Level: {confidence_level} (avg similarity: {avg_confidence:.2f})*"
+            source_info += confidence_info
+        
+        return llm_response + source_info
+    
+    def _generate_fallback_response(self, query: str, search_results: List[SearchResult]) -> str:
+        """
+        Generate a fallback response when LLM is not available.
+        
+        Args:
+            query: The user's question
+            search_results: List of SearchResult objects
+            
+        Returns:
+            Fallback response string
+        """
         answer_parts = []
         answer_parts.append(f"Based on the available information, here's what I found about your question:\n")
         
-        for i, result in enumerate(sorted_results[:3]):  # Use top 3 most relevant chunks
+        for i, result in enumerate(search_results[:3]):  # Use top 3 most relevant chunks
             content = result.content.strip()
             if len(content) > 500:  # Truncate very long chunks
                 content = content[:500] + "..."
             
-            answer_parts.append(f"**From {result.source_document}:**\n{content}\n")
+            answer_parts.append(f"**From {result.source_document} (relevance: {result.similarity_score:.2f}):**\n{content}\n")
         
         # Add source information
         if len(search_results) > 1:
             answer_parts.append(f"\n*Found {len(search_results)} relevant sections across the documents.*")
         
         return "\n".join(answer_parts)
+    
+    def generate_enhanced_response(self, query: str, top_k: int = 5, 
+                                 min_similarity: float = 0.15,
+                                 max_tokens: int = 1200,
+                                 temperature: float = 0.7) -> RAGResponse:
+        """
+        Generate an enhanced response using the improved LLM integration.
+        
+        This method demonstrates the enhanced RAG pipeline with:
+        - Better prompt construction
+        - Structured context formatting
+        - Enhanced API call handling
+        - Improved response processing
+        
+        Args:
+            query: The user's question or query
+            top_k: Number of relevant chunks to retrieve
+            min_similarity: Minimum similarity threshold for results
+            max_tokens: Maximum tokens for LLM response
+            temperature: Sampling temperature for LLM
+            
+        Returns:
+            RAGResponse object with enhanced answer, sources, and metadata
+        """
+        start_time = time.time()
+        
+        logger.info(f"Processing enhanced RAG query: '{query}'")
+        
+        # Search for relevant documents
+        search_results = self.search_documents(query, top_k, min_similarity)
+        
+        if not search_results:
+            return RAGResponse(
+                answer="I couldn't find any relevant information to answer your question. Please try rephrasing your query or ask about topics related to AI bootcamp, training, or internships.",
+                sources=[],
+                confidence=0.0,
+                processing_time=time.time() - start_time
+            )
+        
+        # Generate enhanced answer using improved LLM integration
+        answer = self._generate_enhanced_answer(query, search_results, max_tokens, temperature)
+        
+        # Calculate confidence based on similarity scores
+        confidence = self._calculate_confidence(search_results)
+        
+        processing_time = time.time() - start_time
+        
+        logger.info(f"Enhanced RAG response generated in {processing_time:.3f}s with confidence {confidence:.2f}")
+        
+        return RAGResponse(
+            answer=answer,
+            sources=search_results,
+            confidence=confidence,
+            processing_time=processing_time
+        )
+    
+    def _generate_enhanced_answer(self, query: str, search_results: List[SearchResult], 
+                                max_tokens: int, temperature: float) -> str:
+        """
+        Generate an enhanced answer using the improved LLM integration.
+        
+        This method showcases the enhanced RAG pipeline:
+        1. Constructs structured prompts with context
+        2. Makes optimized API calls to the LLM
+        3. Processes and enhances the generated response
+        
+        Args:
+            query: The user's question
+            search_results: List of relevant search results
+            max_tokens: Maximum tokens for LLM response
+            temperature: Sampling temperature
+            
+        Returns:
+            Enhanced answer string
+        """
+        # Sort results by similarity score
+        sorted_results = sorted(search_results, key=lambda x: x.similarity_score, reverse=True)
+        
+        # Use enhanced Azure AI Foundry DeepSeek if available
+        if self.use_azure_ai and self.azure_client:
+            try:
+                logger.info("Using enhanced DeepSeek integration for response generation")
+                
+                # Prepare enhanced context chunks
+                context_chunks = self._prepare_enhanced_context_chunks(sorted_results)
+                
+                # Make the enhanced API call to the LLM
+                logger.info(f"Making enhanced API call with {len(context_chunks)} context chunks")
+                response = self.azure_client.generate_rag_response(
+                    query=query,
+                    context_chunks=context_chunks,
+                    max_tokens=max_tokens,
+                    temperature=temperature,
+                    include_sources=True
+                )
+                
+                # Process and enhance the LLM response
+                enhanced_answer = self._enhance_llm_response(response.content, sorted_results)
+                
+                logger.info("Successfully generated enhanced response using DeepSeek")
+                return enhanced_answer
+                
+            except Exception as e:
+                logger.error(f"Enhanced DeepSeek generation failed: {e}")
+                logger.warning("Falling back to enhanced text-based response generation")
+                # Fall through to enhanced fallback
+        
+        # Enhanced fallback response
+        return self._generate_fallback_response(query, sorted_results)
     
     def _calculate_confidence(self, search_results: List[SearchResult]) -> float:
         """Calculate confidence score based on similarity scores."""
@@ -538,24 +913,33 @@ class RAGService:
 
 
 def create_rag_service(use_mongodb: bool = False, 
-                      mongodb_connection_string: Optional[str] = None) -> RAGService:
+                      mongodb_connection_string: Optional[str] = None,
+                      use_azure_ai: bool = True,
+                      azure_endpoint: Optional[str] = None,
+                      azure_api_key: Optional[str] = None,
+                      azure_model_name: Optional[str] = None) -> RAGService:
     """
     Factory function to create a RAG service instance.
     
     Args:
         use_mongodb: Whether to use MongoDB for vector search
         mongodb_connection_string: MongoDB connection string (required if use_mongodb=True)
+        use_azure_ai: Whether to use Azure AI Foundry for response generation
+        azure_endpoint: Azure AI Foundry endpoint URL
+        azure_api_key: Azure AI Foundry API key
+        azure_model_name: Azure AI Foundry model name
     
     Returns:
         RAGService instance
     """
-    if use_mongodb and mongodb_connection_string:
-        return RAGService(
-            use_mongodb=True,
-            mongodb_connection_string=mongodb_connection_string
-        )
-    else:
-        return RAGService()
+    return RAGService(
+        use_mongodb=use_mongodb,
+        mongodb_connection_string=mongodb_connection_string,
+        use_azure_ai=use_azure_ai,
+        azure_endpoint=azure_endpoint,
+        azure_api_key=azure_api_key,
+        azure_model_name=azure_model_name
+    )
 
 
 def create_mongodb_rag_service(connection_string: str, 
@@ -580,109 +964,3 @@ def create_mongodb_rag_service(connection_string: str,
     )
 
 
-def main():
-    """
-    Main function that takes a user query as input and returns a response.
-    This function can be called from other parts of the application.
-    """
-    import sys
-    
-    # Initialize the RAG service
-    try:
-        rag = create_rag_service()
-        print("RAG Service initialized successfully!")
-    except Exception as e:
-        print(f"Failed to initialize RAG service: {e}")
-        return None
-    
-    # Get user query
-    if len(sys.argv) > 1:
-        # Query provided as command line argument
-        query = " ".join(sys.argv[1:])
-    else:
-        # Interactive mode
-        query = input("Enter your question: ").strip()
-    
-    if not query:
-        print("No query provided. Exiting.")
-        return None
-    
-    # Generate response
-    try:
-        print(f"\nProcessing query: '{query}'")
-        print("=" * 50)
-        
-        response = rag.generate_response(query)
-        
-        # Display results
-        print(f"\nAnswer:\n{response.answer}")
-        print(f"\nConfidence: {response.confidence:.2f}")
-        print(f"Sources found: {len(response.sources)}")
-        print(f"Processing time: {response.processing_time:.3f}s")
-        
-        # Show sources if available
-        if response.sources:
-            print(f"\nSources:")
-            for i, source in enumerate(response.sources[:3], 1):
-                print(f"{i}. {source.source_document} (similarity: {source.similarity_score:.3f})")
-        
-        return response
-        
-    except Exception as e:
-        print(f"Error processing query: {e}")
-        return None
-
-
-def process_user_query(query: str) -> Optional[RAGResponse]:
-    """
-    Process a user query and return a RAG response.
-    
-    Args:
-        query: The user's question or query string
-        
-    Returns:
-        RAGResponse object with answer and metadata, or None if error
-    """
-    try:
-        # Initialize RAG service
-        rag = create_rag_service()
-        
-        # Generate response
-        response = rag.generate_response(query)
-        
-        return response
-        
-    except Exception as e:
-        logger.error(f"Error processing user query '{query}': {e}")
-        return None
-
-
-# Example usage and testing
-if __name__ == "__main__":
-    # Test the RAG service
-    rag = create_rag_service()
-    
-    # Test queries
-    test_queries = [
-        "What is the AI bootcamp about?",
-        "How long is the training program?",
-        "What are the requirements for AI engineers?",
-        "Tell me about the internship program"
-    ]
-    
-    print("RAG Service Test Results:")
-    print("=" * 50)
-    
-    for query in test_queries:
-        print(f"\nQuery: {query}")
-        response = rag.generate_response(query)
-        print(f"Answer: {response.answer}")
-        print(f"Confidence: {response.confidence:.2f}")
-        print(f"Sources: {len(response.sources)}")
-        print(f"Processing time: {response.processing_time:.3f}s")
-        print("-" * 30)
-    
-    # Run main function for interactive/command line usage
-    print("\n" + "=" * 50)
-    print("Interactive Mode:")
-    main()
