@@ -159,8 +159,8 @@ async def initialize_rag_service():
         summary = rag_service.get_document_summary()
         logger.info(
             "Document summary loaded",
-            total_chunks=summary['total_chunks'],
-            total_documents=summary['total_documents']
+            total_chunks=summary.get('total_chunks', 0),
+            total_documents=summary.get('total_documents', 0)
         )
         
     except Exception as e:
@@ -288,16 +288,16 @@ async def health_check():
         logger.info(
             "Health check successful",
             rag_service_status="initialized",
-            total_chunks=summary["total_chunks"],
-            total_documents=summary["total_documents"]
+            total_chunks=summary.get("total_chunks", 0),
+            total_documents=summary.get("total_documents", 0)
         )
         
         return {
             "status": "healthy",
             "rag_service": "initialized",
             "documents": {
-                "total_chunks": summary["total_chunks"],
-                "total_documents": summary["total_documents"]
+                "total_chunks": summary.get("total_chunks", 0),
+                "total_documents": summary.get("total_documents", 0)
             },
             "timestamp": "2024-01-01T00:00:00Z"  # You can add actual timestamp if needed
         }

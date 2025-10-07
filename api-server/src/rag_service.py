@@ -48,8 +48,8 @@ class RAGService:
     """Main RAG service for document retrieval and response generation."""
     
     def __init__(self, 
-                 chunks_file: str = "/app/data/all_chunks.json",
-                 embeddings_file: str = "/app/data/embeddings.json",
+                 chunks_file: str = "/Users/craddy-san/Desktop/Projects/discord-rag-chatbot/discord-rag-chatbot/data-pipeline/source_documents/all_chunks.json",
+                 embeddings_file: str = "/Users/craddy-san/Desktop/Projects/discord-rag-chatbot/discord-rag-chatbot/data-pipeline/source_documents/embeddings.json",
                  model_name: str = "BAAI/bge-base-en-v1.5",
                  mongodb_connection_string: Optional[str] = None,
                  mongodb_database: str = "discord_rag",
@@ -644,12 +644,17 @@ class RAGService:
         )
     
     def _generate_answer_from_chunks(self, query: str, search_results: List[SearchResult]) -> str:
-        """Generate a coherent answer from the retrieved chunks using enhanced DeepSeek integration."""
+        """Generate a coherent answer from the retrieved chunks using LLM integration."""
         if not search_results:
             return "No relevant information found."
         
         # Sort results by similarity score
         sorted_results = sorted(search_results, key=lambda x: x.similarity_score, reverse=True)
+        
+        # Try OpenAI API first (more commonly available)
+        openai_answer = self._generate_openai_response(query, sorted_results)
+        if openai_answer:
+            return openai_answer
         
         # Use Azure AI Foundry DeepSeek if available
         if self.use_azure_ai and self.azure_client:
@@ -761,6 +766,80 @@ Content: {content}"""
             answer_parts.append(f"\n*Found {len(search_results)} relevant sections across the documents.*")
         
         return "\n".join(answer_parts)
+    
+    def _generate_openai_response(self, query: str, search_results: List[SearchResult]) -> str:
+        """
+        Generate a response using OpenAI API.
+        
+        Args:
+            query: The user's question
+            search_results: List of relevant search results
+            
+        Returns:
+            Generated response string or None if OpenAI is not available
+        """
+        try:
+            import openai
+            
+            # Get OpenAI API key from environment
+            openai_api_key = os.getenv("OPENAI_API_KEY")
+            if not openai_api_key or openai_api_key == "your-openai-api-key":
+                logger.debug("OpenAI API key not configured")
+                return None
+            
+            # Initialize OpenAI client
+            client = openai.OpenAI(api_key=openai_api_key)
+            
+            # Prepare context from search results
+            context_parts = []
+            for i, result in enumerate(search_results[:3], 1):  # Use top 3 results
+                content = result.content.strip()
+                if len(content) > 800:  # Truncate very long chunks
+                    content = content[:800] + "..."
+                context_parts.append(f"Source {i} (from {result.source_document}):\n{content}")
+            
+            context = "\n\n".join(context_parts)
+            
+            # Create the prompt
+            system_prompt = """You are a helpful AI assistant that answers questions using provided context documents.
+
+Instructions:
+- Base your answer ONLY on the provided context
+- Be accurate and specific
+- If the context doesn't contain enough information, say so clearly
+- Synthesize information from multiple sources when relevant
+- Be conversational but professional
+- Don't copy text verbatim - explain and summarize in your own words"""
+
+            user_prompt = f"""Context:
+{context}
+
+Question: {query}
+
+Please answer the question using the context above. If the context doesn't contain enough information, let me know."""
+
+            # Make API call
+            logger.info("Generating response using OpenAI API")
+            response = client.chat.completions.create(
+                model="gpt-3.5-turbo",
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": user_prompt}
+                ],
+                max_tokens=800,
+                temperature=0.7
+            )
+            
+            answer = response.choices[0].message.content.strip()
+            logger.info("Successfully generated response using OpenAI")
+            return answer
+            
+        except ImportError:
+            logger.debug("OpenAI library not installed")
+            return None
+        except Exception as e:
+            logger.error(f"OpenAI generation failed: {e}")
+            return None
     
     def generate_enhanced_response(self, query: str, top_k: int = 5, 
                                  min_similarity: float = 0.15,
